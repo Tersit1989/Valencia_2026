@@ -7,6 +7,7 @@ import {
   routeUrl
 } from "../lib/data";
 import StatusChip from "./StatusChip";
+import TtsButton from "./TtsButton";
 
 /** Full point card per the map spec: name, day/time, status, address, route,
  *  meaning, facts, order, avoid, child mission, plan B, official site. */
@@ -41,10 +42,13 @@ export default function PlaceCard({ place }: { place: Place }) {
           {prev ? ` от «${prev.name}»` : ""}
         </p>
       )}
-      {place.routeNotes && <p>{place.routeNotes}</p>}
+      {place.routeNotes && <p className="guide-text">{place.routeNotes}</p>}
       {guide && (
         <div className="guide-block">
-          <p className="guide-title">🎙️ {guide.title}</p>
+          <div className="guide-head">
+            <p className="guide-title">🎙️ {guide.title}</p>
+            <TtsButton text={`${guide.title}. ${guide.paragraphs.join(" ")}`} />
+          </div>
           {guide.paragraphs.map((p) => (
             <p key={p.slice(0, 40)} className="guide-text">
               {p}

@@ -7,6 +7,7 @@ import phrasesJson from "../data/phrases.json";
 import guideJson from "../data/guide.json";
 import type {
   Day,
+  DayIntro,
   Place,
   PlaceCategory,
   PlaceGuide,
@@ -25,6 +26,11 @@ export const phraseGroups = phrasesJson.groups as PhraseGroup[];
 export const reservations = tripJson.reservations as Reservation[];
 
 export const guides = guideJson.guides as PlaceGuide[];
+export const dayIntros = guideJson.dayIntros as DayIntro[];
+
+export function getDayIntro(dayId: string): DayIntro | undefined {
+  return dayIntros.find((d) => d.dayId === dayId);
+}
 
 const placeById = new Map(places.map((p) => [p.id, p]));
 const guideByPlaceId = new Map(guides.map((g) => [g.placeId, g]));

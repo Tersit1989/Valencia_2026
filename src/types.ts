@@ -49,6 +49,14 @@ export interface PlaceGuide {
   placeId: string;
   title: string;
   paragraphs: string[];
+  question?: string;
+  answer?: string;
+}
+
+export interface DayIntro {
+  dayId: string;
+  title: string;
+  paragraphs: string[];
 }
 
 export interface ItineraryItem {

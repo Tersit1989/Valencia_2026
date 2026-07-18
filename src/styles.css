@@ -189,6 +189,19 @@ nav.bottom .ico {
   border-bottom: 1px solid var(--line);
 }
 
+/* На телефоне время ставим над названием, чтобы вложенным карточкам
+   хватало всей ширины экрана. */
+@media (max-width: 520px) {
+  .timeline-item {
+    flex-direction: column;
+    gap: 2px;
+  }
+  .timeline-time {
+    min-width: 0;
+    color: var(--accent);
+  }
+}
+
 .timeline-item:last-child {
   border-bottom: none;
 }
@@ -326,6 +339,61 @@ ul.tight li {
   font-size: 1.02rem;
   line-height: 1.6;
   margin: 8px 0;
+  text-align: justify;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+}
+
+.guide-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.tts-btn {
+  border: 1.5px solid var(--accent);
+  background: transparent;
+  color: var(--accent);
+  border-radius: 999px;
+  padding: 6px 14px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.tts-btn.playing {
+  background: var(--accent);
+  color: #fff;
+}
+
+.quiz {
+  background: var(--accent-soft);
+  border-radius: 12px;
+  padding: 10px 12px;
+  margin-top: 10px;
+}
+
+.quiz-q {
+  font-weight: 600;
+  margin: 0 0 8px;
+}
+
+.quiz-a {
+  margin: 0;
+}
+
+.quiz-btn {
+  border: none;
+  background: var(--accent);
+  color: #fff;
+  border-radius: 999px;
+  padding: 8px 16px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  cursor: pointer;
 }
 
 .phrase {
