@@ -41,6 +41,14 @@ export interface Place {
   planB: string | null;
   verificationDate: string;
   verificationStatus: "ok" | "verify";
+  /** Точный текстовый адрес для навигации в Google Maps (важнее координат). */
+  navQuery?: string;
+}
+
+export interface PlaceGuide {
+  placeId: string;
+  title: string;
+  paragraphs: string[];
 }
 
 export interface ItineraryItem {

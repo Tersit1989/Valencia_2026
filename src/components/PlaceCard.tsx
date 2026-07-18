@@ -2,6 +2,7 @@ import type { Place } from "../types";
 import {
   CATEGORY_COLORS,
   CATEGORY_LABELS,
+  getGuide,
   getPlace,
   routeUrl
 } from "../lib/data";
@@ -11,6 +12,7 @@ import StatusChip from "./StatusChip";
  *  meaning, facts, order, avoid, child mission, plan B, official site. */
 export default function PlaceCard({ place }: { place: Place }) {
   const prev = getPlace(place.previousPlaceId);
+  const guide = getGuide(place.id);
   return (
     <div>
       <h3>{place.name}</h3>
@@ -40,6 +42,16 @@ export default function PlaceCard({ place }: { place: Place }) {
         </p>
       )}
       {place.routeNotes && <p>{place.routeNotes}</p>}
+      {guide && (
+        <div className="guide-block">
+          <p className="guide-title">🎙️ {guide.title}</p>
+          {guide.paragraphs.map((p) => (
+            <p key={p.slice(0, 40)} className="guide-text">
+              {p}
+            </p>
+          ))}
+        </div>
+      )}
       {place.facts.length > 0 && (
         <details open>
           <summary>Интересное</summary>

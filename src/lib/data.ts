@@ -4,10 +4,12 @@ import itineraryJson from "../data/itinerary.json";
 import restaurantsJson from "../data/restaurants.json";
 import storiesJson from "../data/stories.json";
 import phrasesJson from "../data/phrases.json";
+import guideJson from "../data/guide.json";
 import type {
   Day,
   Place,
   PlaceCategory,
+  PlaceGuide,
   PhraseGroup,
   Reservation,
   Restaurant,
@@ -22,10 +24,17 @@ export const stories = storiesJson.stories as Story[];
 export const phraseGroups = phrasesJson.groups as PhraseGroup[];
 export const reservations = tripJson.reservations as Reservation[];
 
+export const guides = guideJson.guides as PlaceGuide[];
+
 const placeById = new Map(places.map((p) => [p.id, p]));
+const guideByPlaceId = new Map(guides.map((g) => [g.placeId, g]));
 
 export function getPlace(id: string | null): Place | undefined {
   return id ? placeById.get(id) : undefined;
+}
+
+export function getGuide(placeId: string | null): PlaceGuide | undefined {
+  return placeId ? guideByPlaceId.get(placeId) : undefined;
 }
 
 export function getReservationFor(placeId: string): Reservation | undefined {
@@ -71,8 +80,12 @@ export const STATUS_COLORS: Record<string, string> = {
 };
 
 export function routeUrl(place: Place): string {
-  const { lat, lon } = place.coordinates;
-  return `https://www.google.com/maps/dir/?api=1&destination=${lat},${lon}&travelmode=walking`;
+  // Текстовый адрес надёжнее координат: Google сам находит точный вход.
+  const destination = place.navQuery
+    ? encodeURIComponent(place.navQuery)
+    : `${place.coordinates.lat},${place.coordinates.lon}`;
+  const mode = place.transportMode === "taxi" ? "driving" : "walking";
+  return `https://www.google.com/maps/dir/?api=1&destination=${destination}&travelmode=${mode}`;
 }
 
 export function osmUrl(place: Place): string {

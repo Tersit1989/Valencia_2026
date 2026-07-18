@@ -1,12 +1,15 @@
 {
-  "note": "Координаты известных достопримечательностей — общеизвестные ориентиры OpenStreetMap. Точки со статусом 'verify' требуют проверки координат/адреса перед поездкой (онлайн-геокодирование в среде разработки было недоступно).",
+  "note": "Адреса ресторанов и отеля проверены по официальным сайтам и справочникам (18.07.2026). Координаты пинов — ориентировочные (±50–100 м): точная навигация идёт по полю navQuery (текстовый адрес для Google Maps). Точки со статусом 'verify' требуют финальной проверки перед поездкой.",
   "places": [
     {
       "id": "hotel-helen-berger",
       "name": "Room Mate Helen Berger",
       "category": "hotel",
       "address": "Carrer de les Comèdies 22–24, Valencia",
-      "coordinates": { "lat": 39.4735, "lon": -0.3731 },
+      "coordinates": {
+        "lat": 39.4734,
+        "lon": -0.3727
+      },
       "officialUrl": "https://hotelhelenberger.com/",
       "reservationStatus": null,
       "date": null,
@@ -17,30 +20,45 @@
       "routeNotes": "База поездки. Ресторан отеля — главная логистическая страховка: кухня non-stop, отдельная поездка не нужна.",
       "importance": "core",
       "indoorOutdoor": "indoor",
-      "foodRecommendations": ["titaina coca с тунцом", "Russian salad", "pastrami sandwich на двоих", "лёгкая рыба", "салат", "tortilla"],
+      "foodRecommendations": [
+        "titaina coca с тунцом",
+        "Russian salad",
+        "pastrami sandwich на двоих",
+        "лёгкая рыба",
+        "салат",
+        "tortilla"
+      ],
       "wineRecommendations": [],
-      "childOptions": ["хлеб, вода и сок", "простая рыба", "йогурт и фрукты"],
+      "childOptions": [
+        "хлеб, вода и сок",
+        "простая рыба",
+        "йогурт и фрукты"
+      ],
       "etiquette": [],
       "facts": [],
       "childMission": null,
       "planB": null,
       "verificationDate": "2026-07-18",
-      "verificationStatus": "verify"
+      "verificationStatus": "verify",
+      "navQuery": "Room Mate Helen Berger, Carrer de les Comèdies 22, València"
     },
     {
       "id": "clann",
       "name": "Clann Bar Tapas",
       "category": "confirmed-restaurant",
-      "address": "У Plaza de la Reina, Valencia — точный адрес проверить в подтверждении брони",
-      "coordinates": { "lat": 39.4748, "lon": -0.3757 },
-      "officialUrl": null,
+      "address": "Carrer dels Assaonadors 9, 46001 València (квартал El Mercat, рядом с Plaça del Mercat)",
+      "coordinates": {
+        "lat": 39.4761,
+        "lon": -0.3779
+      },
+      "officialUrl": "https://clannvalencia.com/",
       "reservationStatus": "confirmed",
       "date": "2026-07-22",
       "time": "19:00",
       "duration": "1,5 часа",
       "transportMode": "walk",
       "previousPlaceId": "hotel-helen-berger",
-      "routeNotes": "Пешком: Helen Berger → Plaza del Patriarca → Palacio del Marqués de Dos Aguas → Plaza de la Reina → Clann. Не задерживаться, бронь на 19:00.",
+      "routeNotes": "Пешком: Helen Berger → Plaza del Patriarca → Palacio del Marqués de Dos Aguas → Plaza de la Reina → мимо башни Santa Catalina к Plaça del Mercat → Carrer dels Assaonadors. Около 15–20 минут, не задерживаться: бронь на 19:00.",
       "importance": "core",
       "indoorOutdoor": "indoor",
       "foodRecommendations": [
@@ -48,8 +66,12 @@
         "2-я волна: осьминог или кальмар на гриле, рыба или гребешки, одно мясное блюдо, простая позиция ребёнку",
         "Не брать одновременно много крокетов и других жареных тапас"
       ],
-      "wineRecommendations": ["Сухое местное белое по бокалам: «Could you recommend a fresh local white wine by the glass that works with seafood and tapas?»"],
-      "childOptions": ["«Do you have a simple tortilla, grilled fish, chicken or another mild dish for a child?»"],
+      "wineRecommendations": [
+        "Сухое местное белое по бокалам: «Could you recommend a fresh local white wine by the glass that works with seafood and tapas?»"
+      ],
+      "childOptions": [
+        "«Do you have a simple tortilla, grilled fish, chicken or another mild dish for a child?»"
+      ],
       "etiquette": [
         "Тапасы принято делить.",
         "Можно заказывать поэтапно.",
@@ -61,14 +83,18 @@
       "childMission": null,
       "planB": "Если рейс задержан: убрать прогулку, предупредить Clann через WhatsApp, идти в ресторан прямо из отеля.",
       "verificationDate": "2026-07-18",
-      "verificationStatus": "verify"
+      "verificationStatus": "ok",
+      "navQuery": "Clann Bar, Carrer dels Assaonadors 9, València"
     },
     {
       "id": "navarro",
       "name": "Restaurante Navarro",
       "category": "pending-restaurant",
-      "address": "Центр Валенсии, рядом с отелем — адрес проверить на официальном сайте",
-      "coordinates": { "lat": 39.4693, "lon": -0.3768 },
+      "address": "Carrer de l'Arquebisbe Mayoral 5, 46002 València (за зданием мэрии)",
+      "coordinates": {
+        "lat": 39.469,
+        "lon": -0.3776
+      },
       "officialUrl": "https://restaurantenavarro.com/en/",
       "reservationStatus": "pending",
       "date": "2026-07-23",
@@ -88,21 +114,31 @@
         "Рис: «Which rice dish would you recommend for first-time visitors, and what is the minimum order?»",
         "Не брать много закусок перед большим рисом"
       ],
-      "wineRecommendations": ["«We would like a local dry white wine, fresh and not too aromatic, preferably by the glass.»"],
-      "childOptions": ["Простая рыба, мясо или картофель без тяжёлого соуса"],
+      "wineRecommendations": [
+        "«We would like a local dry white wine, fresh and not too aromatic, preferably by the glass.»"
+      ],
+      "childOptions": [
+        "Простая рыба, мясо или картофель без тяжёлого соуса"
+      ],
       "etiquette": [],
-      "facts": ["Семейный ресторан с 1951 года, продукты с Mercado Central и Ruzafa."],
+      "facts": [
+        "Семейный ресторан с 1951 года, продукты с Mercado Central и Ruzafa."
+      ],
       "childMission": null,
       "planB": "Если Navarro не подтвердится: не менять исторический маршрут; выбрать резервный ресторан в центре (полноценный зал, рейтинг 4,5+, обед 13:00–15:30, средиземноморская кухня).",
       "verificationDate": "2026-07-18",
-      "verificationStatus": "verify"
+      "verificationStatus": "ok",
+      "navQuery": "Restaurante Navarro, Carrer de l'Arquebisbe Mayoral 5, València"
     },
     {
       "id": "habitual",
       "name": "Habitual by Ricard Camarena",
       "category": "confirmed-restaurant",
-      "address": "Mercado de Colón (нижний уровень), Valencia",
-      "coordinates": { "lat": 39.4676, "lon": -0.3697 },
+      "address": "Mercado de Colón, нижний уровень; Carrer de Jorge Juan 19, 46004 València",
+      "coordinates": {
+        "lat": 39.4675,
+        "lon": -0.3694
+      },
       "officialUrl": "https://www.habitual.es/",
       "reservationStatus": "confirmed",
       "date": "2026-07-24",
@@ -131,14 +167,18 @@
       "childMission": null,
       "planB": null,
       "verificationDate": "2026-07-18",
-      "verificationStatus": "verify"
+      "verificationStatus": "ok",
+      "navQuery": "Habitual Ricard Camarena, Mercado de Colón, València"
     },
     {
       "id": "rausell",
       "name": "Rausell",
       "category": "candidate-restaurant",
-      "address": "Район Extramurs, Valencia — адрес проверить на официальном сайте",
-      "coordinates": { "lat": 39.4692, "lon": -0.3893 },
+      "address": "Carrer d'Àngel Guimerà 61, 46008 València (район Extramurs)",
+      "coordinates": {
+        "lat": 39.4695,
+        "lon": -0.3895
+      },
       "officialUrl": "https://www.rausell.es/",
       "reservationStatus": "candidate",
       "date": "2026-07-25",
@@ -156,21 +196,31 @@
         "одно мясное блюдо",
         "arroz meloso, если подходит по размеру"
       ],
-      "wineRecommendations": ["«Could you recommend a good-value local wine by the glass? We prefer something fresh rather than heavy.»"],
-      "childOptions": ["Простая курица или рыба"],
+      "wineRecommendations": [
+        "«Could you recommend a good-value local wine by the glass? We prefer something fresh rather than heavy.»"
+      ],
+      "childOptions": [
+        "Простая курица или рыба"
+      ],
       "etiquette": [],
-      "facts": ["Семейная история с 1948 года: кухня рынка, рыба и морепродукты из Denia, мясо на гриле, рис. Ресторанный зал, бар и takeaway."],
+      "facts": [
+        "Семейная история с 1948 года: кухня рынка, рыба и морепродукты из Denia, мясо на гриле, рис. Ресторанный зал, бар и takeaway."
+      ],
       "childMission": null,
       "planB": "Если семья выбирает Альбуферу — убрать Bioparc и Rausell, не пытаться совместить всё.",
       "verificationDate": "2026-07-18",
-      "verificationStatus": "verify"
+      "verificationStatus": "ok",
+      "navQuery": "Restaurante Rausell, Carrer d'Àngel Guimerà 61, València"
     },
     {
       "id": "mercado-central",
       "name": "Mercado Central",
       "category": "attraction",
       "address": "Plaça de la Ciutat de Bruges, Valencia",
-      "coordinates": { "lat": 39.4738, "lon": -0.3788 },
+      "coordinates": {
+        "lat": 39.4738,
+        "lon": -0.3788
+      },
       "officialUrl": "https://www.visitvalencia.com/en/what-to-do-valencia/valencian-culture/monuments-in-valencia/central-market",
       "reservationStatus": null,
       "date": "2026-07-23",
@@ -181,22 +231,32 @@
       "routeNotes": "Часы: ориентировочно 07:30–15:00, понедельник–суббота.",
       "importance": "core",
       "indoorOutdoor": "indoor",
-      "foodRecommendations": ["Смотреть: рыбу, хамон, фрукты, томаты, специи, оливки"],
+      "foodRecommendations": [
+        "Смотреть: рыбу, хамон, фрукты, томаты, специи, оливки"
+      ],
       "wineRecommendations": [],
       "childOptions": [],
-      "etiquette": ["Не блокировать проход и не фотографировать продавцов вплотную без разрешения."],
-      "facts": ["Один из крупнейших крытых рынков Европы: купол и витражи."],
+      "etiquette": [
+        "Не блокировать проход и не фотографировать продавцов вплотную без разрешения."
+      ],
+      "facts": [
+        "Один из крупнейших крытых рынков Европы: купол и витражи."
+      ],
       "childMission": "Найди самый необычный фрукт, самую большую рыбу и три вида оливок.",
       "planB": null,
       "verificationDate": "2026-07-18",
-      "verificationStatus": "ok"
+      "verificationStatus": "ok",
+      "navQuery": "Mercado Central, València"
     },
     {
       "id": "central-bar",
       "name": "Central Bar",
       "category": "fallback-food",
       "address": "Внутри Mercado Central, Valencia",
-      "coordinates": { "lat": 39.4739, "lon": -0.3786 },
+      "coordinates": {
+        "lat": 39.4739,
+        "lon": -0.3786
+      },
       "officialUrl": null,
       "reservationStatus": null,
       "date": "2026-07-23",
@@ -212,20 +272,28 @@
         "Не брать четыре больших bocadillos — иначе обед будет слишком рано"
       ],
       "wineRecommendations": [],
-      "childOptions": ["Половина bocadillo, сок"],
-      "etiquette": ["Еда у стойки — это нормальный местный формат."],
+      "childOptions": [
+        "Половина bocadillo, сок"
+      ],
+      "etiquette": [
+        "Еда у стойки — это нормальный местный формат."
+      ],
       "facts": [],
       "childMission": null,
       "planB": "Если очередь более 15–20 минут или пожилому человеку неудобно у стойки — перейти в обычный традиционный бар: tostada con tomate y aceite, café con leche, zumo de naranja, tortilla.",
       "verificationDate": "2026-07-18",
-      "verificationStatus": "verify"
+      "verificationStatus": "verify",
+      "navQuery": "Central Bar Ricard Camarena, Mercado Central, València"
     },
     {
       "id": "lonja",
       "name": "Lonja de la Seda",
       "category": "attraction",
       "address": "Carrer de la Llotja 2, Valencia",
-      "coordinates": { "lat": 39.4744, "lon": -0.3786 },
+      "coordinates": {
+        "lat": 39.4744,
+        "lon": -0.3786
+      },
       "officialUrl": "https://www.visitvalencia.com/en/what-to-do-valencia/valencian-culture/monuments-in-valencia/lonja-silk-exchange",
       "reservationStatus": null,
       "date": "2026-07-23",
@@ -248,14 +316,18 @@
       "childMission": "Представь, что колонны — каменные деревья. Сколько стволов ты видишь?",
       "planB": null,
       "verificationDate": "2026-07-18",
-      "verificationStatus": "ok"
+      "verificationStatus": "ok",
+      "navQuery": "Lonja de la Seda, València"
     },
     {
       "id": "plaza-redonda",
       "name": "Plaza Redonda",
       "category": "attraction",
       "address": "Plaça Redonda, Valencia",
-      "coordinates": { "lat": 39.4742, "lon": -0.3773 },
+      "coordinates": {
+        "lat": 39.4739,
+        "lon": -0.3774
+      },
       "officialUrl": null,
       "reservationStatus": null,
       "date": "2026-07-23",
@@ -266,7 +338,9 @@
       "routeNotes": "Круглая площадь и напиток.",
       "importance": "optional",
       "indoorOutdoor": "outdoor",
-      "foodRecommendations": ["Напиток, вода"],
+      "foodRecommendations": [
+        "Напиток, вода"
+      ],
       "wineRecommendations": [],
       "childOptions": [],
       "etiquette": [],
@@ -281,7 +355,10 @@
       "name": "Tribunal de las Aguas",
       "category": "optional-attraction",
       "address": "Апостольские ворота собора, Plaza de la Virgen, Valencia",
-      "coordinates": { "lat": 39.4761, "lon": -0.3756 },
+      "coordinates": {
+        "lat": 39.4761,
+        "lon": -0.3756
+      },
       "officialUrl": null,
       "reservationStatus": null,
       "date": "2026-07-23",
@@ -295,7 +372,9 @@
       "foodRecommendations": [],
       "wineRecommendations": [],
       "childOptions": [],
-      "etiquette": ["Смотреть тихо: идёт настоящее заседание."],
+      "etiquette": [
+        "Смотреть тихо: идёт настоящее заседание."
+      ],
       "facts": [
         "Вода определяла жизнь сельского хозяйства.",
         "Представители каналов публично и устно решают споры.",
@@ -311,7 +390,10 @@
       "name": "Catedral de València",
       "category": "attraction",
       "address": "Plaça de l'Almoina, Valencia",
-      "coordinates": { "lat": 39.4753, "lon": -0.3751 },
+      "coordinates": {
+        "lat": 39.4753,
+        "lon": -0.3751
+      },
       "officialUrl": "https://www.visitvalencia.com/en/what-to-do-valencia/valencian-culture/monuments-in-valencia/catedral-valencia-cathedral",
       "reservationStatus": null,
       "date": "2026-07-23",
@@ -332,14 +414,18 @@
       "childMission": null,
       "planB": null,
       "verificationDate": "2026-07-18",
-      "verificationStatus": "ok"
+      "verificationStatus": "ok",
+      "navQuery": "Catedral de València"
     },
     {
       "id": "plaza-reina",
       "name": "Plaza de la Reina",
       "category": "attraction",
       "address": "Plaça de la Reina, Valencia",
-      "coordinates": { "lat": 39.4747, "lon": -0.3755 },
+      "coordinates": {
+        "lat": 39.4747,
+        "lon": -0.3755
+      },
       "officialUrl": null,
       "reservationStatus": null,
       "date": "2026-07-22",
@@ -354,7 +440,9 @@
       "wineRecommendations": [],
       "childOptions": [],
       "etiquette": [],
-      "facts": ["Римское название города — Valentia, основан в 138 году до н. э."],
+      "facts": [
+        "Римское название города — Valentia, основан в 138 году до н. э."
+      ],
       "childMission": "Найди три изображения летучей мыши — одного из символов Валенсии.",
       "planB": null,
       "verificationDate": "2026-07-18",
@@ -365,7 +453,10 @@
       "name": "Plaza de la Virgen",
       "category": "attraction",
       "address": "Plaça de la Mare de Déu, Valencia",
-      "coordinates": { "lat": 39.4762, "lon": -0.3752 },
+      "coordinates": {
+        "lat": 39.4763,
+        "lon": -0.3753
+      },
       "officialUrl": null,
       "reservationStatus": null,
       "date": "2026-07-22",
@@ -391,7 +482,10 @@
       "name": "Palacio del Marqués de Dos Aguas",
       "category": "attraction",
       "address": "Carrer del Poeta Querol 2, Valencia",
-      "coordinates": { "lat": 39.4726, "lon": -0.3745 },
+      "coordinates": {
+        "lat": 39.4727,
+        "lon": -0.3746
+      },
       "officialUrl": null,
       "reservationStatus": null,
       "date": "2026-07-22",
@@ -419,7 +513,10 @@
       "name": "Plaza del Patriarca",
       "category": "attraction",
       "address": "Plaça del Col·legi del Patriarca, Valencia",
-      "coordinates": { "lat": 39.4729, "lon": -0.3738 },
+      "coordinates": {
+        "lat": 39.4729,
+        "lon": -0.3735
+      },
       "officialUrl": null,
       "reservationStatus": null,
       "date": "2026-07-22",
@@ -445,7 +542,10 @@
       "name": "Mercado de Colón",
       "category": "attraction",
       "address": "Carrer de Jorge Juan 19, Valencia",
-      "coordinates": { "lat": 39.4676, "lon": -0.3697 },
+      "coordinates": {
+        "lat": 39.4675,
+        "lon": -0.3694
+      },
       "officialUrl": null,
       "reservationStatus": null,
       "date": "2026-07-24",
@@ -460,18 +560,24 @@
       "wineRecommendations": [],
       "childOptions": [],
       "etiquette": [],
-      "facts": ["Модернистский рынок начала XX века, сейчас — гастрономическое пространство."],
+      "facts": [
+        "Модернистский рынок начала XX века, сейчас — гастрономическое пространство."
+      ],
       "childMission": null,
       "planB": null,
       "verificationDate": "2026-07-18",
-      "verificationStatus": "ok"
+      "verificationStatus": "ok",
+      "navQuery": "Mercado de Colón, València"
     },
     {
       "id": "gulliver",
       "name": "Gulliver Park",
       "category": "attraction",
       "address": "Jardí del Túria, tramo X, Valencia",
-      "coordinates": { "lat": 39.4623, "lon": -0.3564 },
+      "coordinates": {
+        "lat": 39.4623,
+        "lon": -0.3564
+      },
       "officialUrl": "https://www.visitvalencia.com/en/what-to-do-valencia/nature-in-valencia/parks-and-gardens-valencia/gulliver-park",
       "reservationStatus": null,
       "date": "2026-07-23",
@@ -486,18 +592,24 @@
       "wineRecommendations": [],
       "childOptions": [],
       "etiquette": [],
-      "facts": ["Посетители изображают лилипутов, карабкающихся по лежащему Гулливеру."],
+      "facts": [
+        "Посетители изображают лилипутов, карабкающихся по лежащему Гулливеру."
+      ],
       "childMission": "Заберись на Гулливера, как лилипут, и найди самую длинную горку.",
       "planB": null,
       "verificationDate": "2026-07-18",
-      "verificationStatus": "ok"
+      "verificationStatus": "ok",
+      "navQuery": "Parque Gulliver, València"
     },
     {
       "id": "turia",
       "name": "Парк Турия",
       "category": "attraction",
       "address": "Jardí del Túria (участок у Gulliver Park), Valencia",
-      "coordinates": { "lat": 39.464, "lon": -0.358 },
+      "coordinates": {
+        "lat": 39.464,
+        "lon": -0.358
+      },
       "officialUrl": null,
       "reservationStatus": null,
       "date": "2026-07-23",
@@ -526,7 +638,10 @@
       "name": "Oceanogràfic",
       "category": "attraction",
       "address": "Ciutat de les Arts i les Ciències, Carrer d'Eduardo Primo Yúfera 1B, Valencia",
-      "coordinates": { "lat": 39.453, "lon": -0.3477 },
+      "coordinates": {
+        "lat": 39.453,
+        "lon": -0.3477
+      },
       "officialUrl": "https://www.oceanografic.org/en/planifica-tu-visita-al-oceanografic-de-valencia/prices-and-schedules/",
       "reservationStatus": null,
       "date": "2026-07-24",
@@ -551,14 +666,18 @@
       "childMission": "Найди животное, которое маскируется; найди самую большую рыбу; выбери трёх любимых животных; запиши один неожиданный факт.",
       "planB": "При усталости оставить только четыре приоритетные зоны: акулы и туннели, Арктика, Антарктика, Средиземное море. Пауза каждые 60–90 минут, не читать каждую табличку.",
       "verificationDate": "2026-07-18",
-      "verificationStatus": "ok"
+      "verificationStatus": "ok",
+      "navQuery": "Oceanogràfic, València"
     },
     {
       "id": "bioparc",
       "name": "Bioparc",
       "category": "attraction",
       "address": "Avinguda Pío Baroja 3, Valencia",
-      "coordinates": { "lat": 39.4785, "lon": -0.4093 },
+      "coordinates": {
+        "lat": 39.4781,
+        "lon": -0.4076
+      },
       "officialUrl": "https://bioparcvalencia.es/",
       "reservationStatus": null,
       "date": "2026-07-25",
@@ -582,14 +701,18 @@
       "childMission": "Найди суриката-часового и посчитай, сколько лемуров ты видишь.",
       "planB": "Если Bioparc слишком жаркий: Museo Nacional de Cerámica, короткая прогулка, кондиционируемая пауза, Rausell, отель.",
       "verificationDate": "2026-07-18",
-      "verificationStatus": "ok"
+      "verificationStatus": "ok",
+      "navQuery": "Bioparc València"
     },
     {
       "id": "santa-catalina",
       "name": "Horchatería Santa Catalina",
       "category": "fallback-food",
       "address": "Plaça de Santa Caterina 6, Valencia",
-      "coordinates": { "lat": 39.4744, "lon": -0.3763 },
+      "coordinates": {
+        "lat": 39.4742,
+        "lon": -0.3764
+      },
       "officialUrl": null,
       "reservationStatus": null,
       "date": null,
@@ -600,22 +723,33 @@
       "routeNotes": "Только сладкая остановка, не полноценный завтрак.",
       "importance": "optional",
       "indoorOutdoor": "indoor",
-      "foodRecommendations": ["horchata", "fartons", "churros", "шоколад"],
+      "foodRecommendations": [
+        "horchata",
+        "fartons",
+        "churros",
+        "шоколад"
+      ],
       "wineRecommendations": [],
-      "childOptions": ["horchata или шоколад с churros"],
+      "childOptions": [
+        "horchata или шоколад с churros"
+      ],
       "etiquette": [],
       "facts": [],
       "childMission": null,
       "planB": null,
       "verificationDate": "2026-07-18",
-      "verificationStatus": "verify"
+      "verificationStatus": "verify",
+      "navQuery": "Horchatería Santa Catalina, Plaça de Santa Caterina 6, València"
     },
     {
       "id": "panaderia",
       "name": "Ближайшая panadería",
       "category": "fallback-food",
       "address": "Любая пекарня рядом с отелем",
-      "coordinates": { "lat": 39.4738, "lon": -0.3726 },
+      "coordinates": {
+        "lat": 39.4738,
+        "lon": -0.3726
+      },
       "officialUrl": null,
       "reservationStatus": null,
       "date": null,
@@ -626,9 +760,20 @@
       "routeNotes": "Не отправлять всю семью на отдельную прогулку ради перекуса.",
       "importance": "optional",
       "indoorOutdoor": "indoor",
-      "foodRecommendations": ["empanada", "bocadillo", "coca", "tortilla", "хлеб", "выпечка", "йогурт", "фрукты"],
+      "foodRecommendations": [
+        "empanada",
+        "bocadillo",
+        "coca",
+        "tortilla",
+        "хлеб",
+        "выпечка",
+        "йогурт",
+        "фрукты"
+      ],
       "wineRecommendations": [],
-      "childOptions": ["выпечка, йогурт, фрукты"],
+      "childOptions": [
+        "выпечка, йогурт, фрукты"
+      ],
       "etiquette": [],
       "facts": [],
       "childMission": null,
@@ -641,7 +786,10 @@
       "name": "Аэропорт Валенсии (VLC)",
       "category": "transport",
       "address": "Aeroport de València, Manises",
-      "coordinates": { "lat": 39.4893, "lon": -0.4816 },
+      "coordinates": {
+        "lat": 39.4893,
+        "lon": -0.4816
+      },
       "officialUrl": null,
       "reservationStatus": null,
       "date": "2026-07-26",
@@ -660,14 +808,18 @@
       "childMission": null,
       "planB": null,
       "verificationDate": "2026-07-18",
-      "verificationStatus": "ok"
+      "verificationStatus": "ok",
+      "navQuery": "Valencia Airport (VLC)"
     },
     {
       "id": "hospital-clinico",
       "name": "Больница (экстренный случай)",
       "category": "emergency",
       "address": "Уточнить у отеля ближайшее приёмное отделение; общеевропейский номер 112",
-      "coordinates": { "lat": 39.476, "lon": -0.3645 },
+      "coordinates": {
+        "lat": 39.476,
+        "lon": -0.3645
+      },
       "officialUrl": null,
       "reservationStatus": null,
       "date": null,

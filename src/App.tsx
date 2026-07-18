@@ -9,11 +9,13 @@ import Missions from "./pages/Missions";
 import Phrases from "./pages/Phrases";
 import Emergency from "./pages/Emergency";
 import Settings from "./pages/Settings";
+import Guide from "./pages/Guide";
 
 const NAV = [
   { to: "/", ico: "🏠", label: "Сегодня" },
   { to: "/days", ico: "🗓️", label: "Дни" },
   { to: "/map", ico: "🗺️", label: "Карта" },
+  { to: "/guide", ico: "🎙️", label: "Гид" },
   { to: "/food", ico: "🍽️", label: "Еда" },
   { to: "/missions", ico: "🦇", label: "Миссии" },
   { to: "/more", ico: "☰", label: "Ещё" }
@@ -43,6 +45,7 @@ export default function App() {
           <Route path="/" element={<Today />} />
           <Route path="/days" element={<Days />} />
           <Route path="/map" element={<MapPage />} />
+          <Route path="/guide" element={<Guide />} />
           <Route path="/food" element={<Restaurants />} />
           <Route path="/missions" element={<Missions />} />
           <Route path="/phrases" element={<Phrases />} />
