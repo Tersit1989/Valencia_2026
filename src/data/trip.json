@@ -1,0 +1,152 @@
+{
+  "version": "2026-07-18",
+  "sourceDocument": "VALENCIA_GUIDE_SOURCE.md, версия 18 июля 2026",
+  "trip": {
+    "city": "Валенсия",
+    "startDate": "2026-07-22",
+    "endDate": "2026-07-26",
+    "timezone": "Europe/Madrid",
+    "group": "3 взрослых (включая пожилого человека) и ребёнок 6 лет",
+    "hotel": {
+      "placeId": "hotel-helen-berger",
+      "name": "Room Mate Helen Berger",
+      "address": "Carrer de les Comèdies 22–24, Valencia",
+      "officialUrl": "https://hotelhelenberger.com/"
+    }
+  },
+  "rules": [
+    "Один логический район на полдня.",
+    "Не ездить через город ради перекуса.",
+    "Основной хороший приём пищи — обед около 13:00–13:30.",
+    "Вечером — лёгкая еда. Исключение — тапас-ужин в день прилёта.",
+    "Активность на улице до 13:00 или после 17:30.",
+    "После обеда — отдых или помещение с кондиционером.",
+    "Такси предпочтительнее сложной пересадки для группы из четырёх человек.",
+    "Рестораны — семейные, с нормальными порциями и понятной едой.",
+    "Не выбирать место только ради Michelin.",
+    "Не использовать brunch-кафе с avocado toast.",
+    "Не повторять один ресторан без причины.",
+    "Любой опциональный пункт можно отменить без ощущения, что день испорчен."
+  ],
+  "reservations": [
+    {
+      "place": "Clann Bar Tapas",
+      "placeId": "clann",
+      "date": "2026-07-22",
+      "time": "19:00",
+      "status": "confirmed",
+      "partySize": 4,
+      "role": "Первый полноценный испанский ужин, тапасы."
+    },
+    {
+      "place": "Restaurante Navarro",
+      "placeId": "navarro",
+      "date": "2026-07-23",
+      "time": "13:30",
+      "status": "pending",
+      "partySize": 4,
+      "role": "Традиционный валенсийский семейный обед."
+    },
+    {
+      "place": "Habitual",
+      "placeId": "habitual",
+      "date": "2026-07-24",
+      "time": "13:30",
+      "status": "confirmed",
+      "partySize": 4,
+      "role": "Главный современный средиземноморский обед."
+    },
+    {
+      "place": "Rausell",
+      "placeId": "rausell",
+      "date": "2026-07-25",
+      "time": "13:30",
+      "status": "candidate",
+      "partySize": 4,
+      "role": "Классическая продуктовая кухня после Bioparc."
+    }
+  ],
+  "excludedRestaurants": [
+    "Memoria Gustativa",
+    "Bar X",
+    "Vuelve Carolina",
+    "Gran Azul",
+    "La Sastrería",
+    "Casa Montaña",
+    "Sagardi",
+    "Casa Baldo",
+    "Boatella Tapas",
+    "Casa Carmela"
+  ],
+  "foodGlossary": [
+    { "name": "Horchata", "note": "Напиток из chufa (земляного миндаля)." },
+    { "name": "Fartons", "note": "Выпечка к horchata." },
+    { "name": "Esgarraet", "note": "Перец, солёная треска и оливковое масло." },
+    { "name": "Clóchinas", "note": "Сезонные валенсийские мидии." },
+    { "name": "Titaina", "note": "Томаты, перец, тунец и кедровые орехи." },
+    { "name": "Paella Valenciana", "note": "Курица, кролик, фасоль, garrofó, иногда улитки." },
+    { "name": "Arroz del senyoret", "note": "Рис с уже очищенными морепродуктами." },
+    { "name": "Agua de Valencia", "note": "Апельсиновый коктейль — крепче, чем кажется." }
+  ],
+  "roomFood": [
+    "вода",
+    "хлеб",
+    "сыр",
+    "хамон",
+    "томаты",
+    "фрукты",
+    "йогурт",
+    "сок",
+    "орехи"
+  ],
+  "kidSimpleFood": [
+    "простая tortilla",
+    "рыба на гриле",
+    "курица без тяжёлого соуса",
+    "хлеб, йогурт, фрукты",
+    "сок или вода"
+  ],
+  "emergency": {
+    "numbers": [
+      { "label": "Единый номер экстренных служб (ЕС)", "value": "112" },
+      { "label": "Национальная полиция", "value": "091" },
+      { "label": "Местная полиция", "value": "092" }
+    ],
+    "hospital": {
+      "placeId": "hospital-clinico",
+      "note": "Ближайшая крупная больница — уточнить у отеля актуальный адрес приёмного отделения.",
+      "verificationStatus": "verify"
+    },
+    "insurance": {
+      "note": "Страховые контакты внести перед поездкой (см. чек-лист).",
+      "verificationStatus": "verify"
+    },
+    "hotelPhone": {
+      "note": "Телефон отеля уточнить в подтверждении бронирования.",
+      "verificationStatus": "verify"
+    }
+  },
+  "checklist": [
+    "Navarro — подтверждение брони 23 июля 13:30",
+    "Rausell — забронировать 25 июля 13:30 (обычный зал, 3 взрослых + ребёнок 6 лет)",
+    "Oceanogràfic — купить билеты и время входа на официальном сайте",
+    "Bioparc — окончательное решение по субботе",
+    "Включён ли завтрак в Helen Berger",
+    "Ночное такси 26 июля 03:30 и бустер для ребёнка",
+    "Прогноз погоды за 48 часов",
+    "Страховые контакты",
+    "Лекарства и аллергии"
+  ],
+  "sources": [
+    { "name": "Oceanogràfic — цены и часы", "url": "https://www.oceanografic.org/en/planifica-tu-visita-al-oceanografic-de-valencia/prices-and-schedules/" },
+    { "name": "Habitual", "url": "https://www.habitual.es/" },
+    { "name": "Restaurante Navarro", "url": "https://restaurantenavarro.com/en/" },
+    { "name": "Rausell", "url": "https://www.rausell.es/" },
+    { "name": "Helen Berger", "url": "https://hotelhelenberger.com/" },
+    { "name": "Mercado Central", "url": "https://www.visitvalencia.com/en/what-to-do-valencia/valencian-culture/monuments-in-valencia/central-market" },
+    { "name": "Lonja de la Seda", "url": "https://www.visitvalencia.com/en/what-to-do-valencia/valencian-culture/monuments-in-valencia/lonja-silk-exchange" },
+    { "name": "Catedral de València", "url": "https://www.visitvalencia.com/en/what-to-do-valencia/valencian-culture/monuments-in-valencia/catedral-valencia-cathedral" },
+    { "name": "Gulliver Park", "url": "https://www.visitvalencia.com/en/what-to-do-valencia/nature-in-valencia/parks-and-gardens-valencia/gulliver-park" },
+    { "name": "Bioparc", "url": "https://bioparcvalencia.es/" }
+  ]
+}

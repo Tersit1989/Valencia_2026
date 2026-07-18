@@ -1,0 +1,92 @@
+{
+  "days": [
+    {
+      "id": "day-1",
+      "date": "2026-07-22",
+      "weekday": "Среда",
+      "title": "Прилёт и тапасы",
+      "planB": "Если рейс задержан: убрать прогулку, предупредить Clann через WhatsApp, идти в ресторан прямо из отеля.",
+      "items": [
+        { "id": "d1-flight-out", "start": "12:00", "end": null, "title": "Вылет из Цюриха", "placeId": null, "type": "transport", "transportMode": "flight", "optional": false, "notes": [] },
+        { "id": "d1-arrival", "start": "14:10", "end": null, "title": "Прилёт в Валенсию", "placeId": "airport", "type": "transport", "transportMode": "flight", "optional": false, "notes": ["14:10–15:10 — выход, багаж, возможное ожидание.", "Не ставить никаких обязательных мероприятий до 17:00."] },
+        { "id": "d1-taxi-hotel", "start": "15:10", "end": "15:40", "title": "Такси до Helen Berger", "placeId": "hotel-helen-berger", "type": "transport", "transportMode": "taxi", "optional": false, "notes": [] },
+        { "id": "d1-checkin", "start": "15:40", "end": "16:15", "title": "Заселение или сдача багажа", "placeId": "hotel-helen-berger", "type": "rest", "transportMode": null, "optional": false, "notes": ["Вода, туалет, короткий отдых."] },
+        { "id": "d1-snack", "start": "16:15", "end": "16:45", "title": "Перекус: ресторан Helen Berger", "placeId": "hotel-helen-berger", "type": "food", "transportMode": null, "optional": false, "notes": ["Только логистическая страховка: кухня non-stop, отдельная поездка не нужна.", "Заказать на семью 1–2 позиции, а не полноценный обед: titaina coca с тунцом, Russian salad, pastrami sandwich на двоих, лёгкая рыба; хлеб, вода и сок ребёнку.", "Цель — убрать острый голод до Clann, но сохранить аппетит.", "Альтернатива — ближайшая panadería: empanada, bocadillo, coca, хлеб, йогурт, фрукты. Не отправлять всю семью на отдельную прогулку ради перекуса."] },
+        { "id": "d1-rest", "start": "16:45", "end": "18:15", "title": "Отдых в отеле", "placeId": "hotel-helen-berger", "type": "rest", "transportMode": null, "optional": false, "notes": [] },
+        { "id": "d1-walk-clann", "start": "18:15", "end": "18:50", "title": "Пешком к Clann", "placeId": "clann", "type": "walk", "transportMode": "walk", "optional": false, "notes": ["Маршрут: Helen Berger → Plaza del Patriarca → Palacio del Marqués de Dos Aguas → Plaza de la Reina → Clann.", "Не задерживаться: бронь на 19:00."] },
+        { "id": "d1-clann", "start": "19:00", "end": "20:30", "title": "Ужин: Clann Bar Tapas", "placeId": "clann", "type": "food", "transportMode": null, "optional": false, "reservation": true, "notes": ["Заказывать постепенно, тапасы делить.", "Не брать одновременно много крокетов и других жареных тапас."] },
+        { "id": "d1-evening-walk", "start": "20:30", "end": "21:20", "title": "Вечерняя прогулка", "placeId": "plaza-virgen", "type": "walk", "transportMode": "walk", "optional": true, "notes": ["Plaza de la Reina → Plaza de la Virgen → внешний осмотр собора → отель.", "Если все устали — сразу в отель.", "Детская миссия: найти три изображения летучей мыши."] }
+      ]
+    },
+    {
+      "id": "day-2",
+      "date": "2026-07-23",
+      "weekday": "Четверг",
+      "title": "Рынок, шёлк и вода",
+      "planB": "Если Navarro не подтвердится: не менять исторический маршрут; выбрать резервный ресторан в центре (полноценный зал, рейтинг 4,5+, обед 13:00–15:30, средиземноморская кухня).",
+      "items": [
+        { "id": "d2-central-bar", "start": "08:15", "end": "09:00", "title": "Завтрак: Central Bar", "placeId": "central-bar", "type": "food", "transportMode": "walk", "optional": false, "notes": ["Внутри Mercado Central. Это валенсийский esmorzaret, не brunch café.", "На четверых: 2 bocadillos (разделить), tortilla, кофе, апельсиновый сок.", "Не брать четыре больших bocadillos — иначе обед будет слишком рано.", "Если очередь более 15–20 минут или пожилому человеку неудобно у стойки — обычный традиционный бар: tostada con tomate y aceite, café con leche, zumo de naranja, tortilla."] },
+        { "id": "d2-mercado", "start": "09:00", "end": "09:45", "title": "Mercado Central", "placeId": "mercado-central", "type": "sight", "transportMode": "walk", "optional": false, "notes": ["Смотреть: купол и витражи, рыбу, хамон, фрукты, томаты, специи, оливки."] },
+        { "id": "d2-lonja", "start": "09:50", "end": "10:40", "title": "Lonja de la Seda", "placeId": "lonja", "type": "sight", "transportMode": "walk", "optional": false, "notes": ["Sala de Contratación, спиральные колонны, апельсиновый двор, башня."] },
+        { "id": "d2-redonda", "start": "10:40", "end": "11:15", "title": "Plaza Redonda и напиток", "placeId": "plaza-redonda", "type": "rest", "transportMode": "walk", "optional": true, "notes": [] },
+        { "id": "d2-transfer", "start": "11:15", "end": "11:45", "title": "Переход к собору", "placeId": "cathedral", "type": "walk", "transportMode": "walk", "optional": false, "notes": [] },
+        { "id": "d2-tribunal", "start": "11:45", "end": "12:15", "title": "Tribunal de las Aguas", "placeId": "tribunal-aguas", "type": "sight", "transportMode": "walk", "optional": true, "notes": ["Каждый четверг около 12:00 у Апостольских ворот собора.", "Это настоящий суд, не представление; если дел нет, всё закончится за несколько минут. Посмотреть 5–10 минут достаточно."] },
+        { "id": "d2-cathedral", "start": "12:15", "end": "13:00", "title": "Catedral de València", "placeId": "cathedral", "type": "sight", "transportMode": "walk", "optional": false, "notes": ["Приоритет: главная церковь, капелла Святой чаши, смешение стилей.", "Miguelete не обязателен: 207 ступеней, жара, пожилой человек, обед в 13:30."] },
+        { "id": "d2-transfer-navarro", "start": "13:00", "end": "13:20", "title": "Переход к Restaurante Navarro", "placeId": "navarro", "type": "walk", "transportMode": "walk", "optional": false, "notes": [] },
+        { "id": "d2-navarro", "start": "13:30", "end": "15:00", "title": "Обед: Restaurante Navarro", "placeId": "navarro", "type": "food", "transportMode": null, "optional": false, "reservation": true, "notes": ["Структура заказа: салат/esgarraet → овощное блюдо → рыба супруге → мясо или рис остальным → 1–2 десерта.", "Не брать много закусок перед большим рисом."] },
+        { "id": "d2-siesta", "start": "15:00", "end": "17:30", "title": "Отель и отдых", "placeId": "hotel-helen-berger", "type": "rest", "transportMode": "walk", "optional": false, "notes": [] },
+        { "id": "d2-taxi-gulliver", "start": "17:30", "end": "17:45", "title": "Такси до Gulliver Park", "placeId": "gulliver", "type": "transport", "transportMode": "taxi", "optional": false, "notes": [] },
+        { "id": "d2-gulliver", "start": "17:45", "end": "18:45", "title": "Gulliver Park", "placeId": "gulliver", "type": "sight", "transportMode": null, "optional": false, "notes": ["Проверить температуру горок рукой. Ребёнку закрытая обувь.", "Заранее договориться о точке встречи. Не проводить больше часа."] },
+        { "id": "d2-turia", "start": "18:45", "end": "19:30", "title": "Парк Турия", "placeId": "turia", "type": "walk", "transportMode": "walk", "optional": true, "notes": [] },
+        { "id": "d2-dinner", "start": "19:30", "end": "20:15", "title": "Лёгкая еда без брони", "placeId": "hotel-helen-berger", "type": "food", "transportMode": null, "optional": false, "notes": ["Варианты: ресторан Helen Berger — салат, titaina coca, лёгкая рыба, sandwich на двоих; или хлеб, сыр, хамон, томаты, фрукты и йогурт в номер.", "Главное — купить продукты до наступления голода."] }
+      ]
+    },
+    {
+      "id": "day-3",
+      "date": "2026-07-24",
+      "weekday": "Пятница",
+      "title": "Habitual и Oceanogràfic",
+      "planB": "При усталости в Oceanogràfic оставить только четыре приоритетные зоны: акулы и туннели, Арктика, Антарктика, Средиземное море.",
+      "items": [
+        { "id": "d3-breakfast", "start": "08:30", "end": "09:15", "title": "Простой завтрак рядом с отелем", "placeId": "hotel-helen-berger", "type": "food", "transportMode": "walk", "optional": false, "notes": ["tostada con tomate y aceite, café con leche, сок, tortilla при необходимости.", "Central Bar второй раз не нужен."] },
+        { "id": "d3-morning", "start": "09:15", "end": "11:30", "title": "Спокойное утро: Eixample", "placeId": "mercado-colon", "type": "walk", "transportMode": "walk", "optional": true, "notes": ["Район Eixample, Mercado de Colón, вода и небольшие покупки.", "Без крупного музея."] },
+        { "id": "d3-colon", "start": "12:45", "end": "13:30", "title": "Прибытие в Mercado de Colón", "placeId": "mercado-colon", "type": "sight", "transportMode": "walk", "optional": false, "notes": [] },
+        { "id": "d3-habitual", "start": "13:30", "end": "15:00", "title": "Обед: Habitual", "placeId": "habitual", "type": "food", "transportMode": null, "optional": false, "reservation": true, "notes": ["Детского меню нет, но блюда адаптируют — сказать про ребёнка 6 лет.", "Не пить тяжёлое красное перед длинным Oceanogràfic."] },
+        { "id": "d3-taxi-ocean", "start": "15:15", "end": "15:35", "title": "Такси до Oceanogràfic", "placeId": "oceanografic", "type": "transport", "transportMode": "taxi", "optional": false, "notes": [] },
+        { "id": "d3-ocean", "start": "15:45", "end": "20:30", "title": "Oceanogràfic", "placeId": "oceanografic", "type": "sight", "transportMode": null, "optional": false, "notes": ["Билеты заранее на официальном сайте: дата и время входа.", "Маршрут: 1) акулы и туннели, 2) Арктика (белухи и моржи), 3) Антарктика (пингвины), 4) Средиземное море, 5) тропические и умеренные моря — при наличии сил.", "Дельфинарий проверять в день посещения; не строить весь маршрут вокруг шоу.", "Вода; пауза каждые 60–90 минут; не читать каждую табличку."] },
+        { "id": "d3-taxi-back", "start": "20:30", "end": "21:00", "title": "Такси в отель", "placeId": "hotel-helen-berger", "type": "transport", "transportMode": "taxi", "optional": false, "notes": [] },
+        { "id": "d3-dinner", "start": "21:00", "end": "21:45", "title": "Лёгкая еда", "placeId": "hotel-helen-berger", "type": "food", "transportMode": null, "optional": false, "notes": ["Helen Berger: салат, рыба, tortilla, sandwich; или продукты в номер.", "Не бронировать второй серьёзный ресторан."] }
+      ]
+    },
+    {
+      "id": "day-4",
+      "date": "2026-07-25",
+      "weekday": "Суббота",
+      "title": "Bioparc и Rausell",
+      "planB": "Если Bioparc слишком жаркий: Museo Nacional de Cerámica → короткая прогулка → кондиционируемая пауза → Rausell → отель. Если семья выбирает Альбуферу: убрать Bioparc и Rausell, не пытаться совместить всё. День ещё не окончательно подтверждён. Пляж исключён; Альбуфера не входит в основной план из-за ночного выезда.",
+      "items": [
+        { "id": "d4-breakfast", "start": "08:00", "end": "08:45", "title": "Простой завтрак", "placeId": "hotel-helen-berger", "type": "food", "transportMode": null, "optional": false, "notes": [] },
+        { "id": "d4-taxi-bioparc", "start": "09:15", "end": "09:30", "title": "Такси до Bioparc", "placeId": "bioparc", "type": "transport", "transportMode": "taxi", "optional": false, "notes": [] },
+        { "id": "d4-bioparc", "start": "09:30", "end": "12:15", "title": "Bioparc", "placeId": "bioparc", "type": "sight", "transportMode": null, "optional": false, "notes": ["Максимум 2,5–3 часа, не проводить весь день.", "Приоритет: саванна, Мадагаскар, экваториальный лес, водные зоны.", "Только утро; вода, кепки, тень; сократить визит при жаре."] },
+        { "id": "d4-taxi-rausell", "start": "12:15", "end": "12:40", "title": "Такси до Rausell", "placeId": "rausell", "type": "transport", "transportMode": "taxi", "optional": false, "notes": [] },
+        { "id": "d4-rausell", "start": "13:30", "end": "15:00", "title": "Обед: Rausell", "placeId": "rausell", "type": "food", "transportMode": null, "optional": false, "reservation": true, "notes": ["Статус: кандидат, ещё не забронирован.", "Заказ: томаты или овощи, sepionets или кальмар, рыба, одно мясное, arroz meloso если подходит по размеру; ребёнку простая курица или рыба.", "Уточнять стоимость рыбы по весу."] },
+        { "id": "d4-hotel", "start": "15:15", "end": "18:30", "title": "Отель: отдых и сборы", "placeId": "hotel-helen-berger", "type": "rest", "transportMode": "taxi", "optional": false, "notes": ["Отдых, сбор вещей, посадочные талоны, зарядка, документы, подтверждение такси."] },
+        { "id": "d4-dinner", "start": "18:30", "end": "19:30", "title": "Лёгкая еда", "placeId": "hotel-helen-berger", "type": "food", "transportMode": null, "optional": false, "notes": ["Helen Berger или продукты в номер."] },
+        { "id": "d4-walk", "start": "19:30", "end": "20:30", "title": "Короткая прогулка рядом с отелем", "placeId": "hotel-helen-berger", "type": "walk", "transportMode": "walk", "optional": true, "notes": ["Не добавлять дальнюю поездку."] }
+      ]
+    },
+    {
+      "id": "day-5",
+      "date": "2026-07-26",
+      "weekday": "Воскресенье",
+      "title": "Вылет",
+      "planB": null,
+      "items": [
+        { "id": "d5-wakeup", "start": "03:15", "end": null, "title": "Подъём", "placeId": "hotel-helen-berger", "type": "rest", "transportMode": null, "optional": false, "notes": [] },
+        { "id": "d5-taxi", "start": "03:30", "end": "04:00", "title": "Такси в аэропорт", "placeId": "airport", "type": "transport", "transportMode": "taxi", "optional": false, "notes": ["Заказать в субботу утром и подтвердить вечером: 4 пассажира, багаж, ребёнок (нужен ли бустер), Valencia Airport, вылет 06:00."] },
+        { "id": "d5-airport", "start": "04:00", "end": null, "title": "Аэропорт", "placeId": "airport", "type": "transport", "transportMode": null, "optional": false, "notes": [] },
+        { "id": "d5-flight", "start": "06:00", "end": null, "title": "Вылет", "placeId": "airport", "type": "transport", "transportMode": "flight", "optional": false, "notes": [] }
+      ]
+    }
+  ]
+}

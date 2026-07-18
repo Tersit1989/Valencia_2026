@@ -1,0 +1,43 @@
+{
+  "groups": [
+    {
+      "id": "restaurant-general",
+      "title": "В ресторане",
+      "phrases": [
+        { "en": "We would like to share the starters.", "ru": "Мы хотели бы разделить закуски на всех." },
+        { "en": "Please bring the dishes gradually.", "ru": "Приносите блюда постепенно, пожалуйста." },
+        { "en": "Is this dish deep-fried?", "ru": "Это блюдо жарится во фритюре?" },
+        { "en": "Can this be prepared without a heavy sauce?", "ru": "Можно приготовить это без тяжёлого соуса?" },
+        { "en": "Could you make a simple version for the child?", "ru": "Можете сделать простой вариант для ребёнка?" },
+        { "en": "What is the total price for the fish by weight?", "ru": "Сколько будет стоить эта рыба по весу?" },
+        { "en": "Is the rice portion for two people?", "ru": "Порция риса рассчитана на двоих?" },
+        { "en": "Could you recommend a fresh local white wine by the glass?", "ru": "Порекомендуйте свежее местное белое вино по бокалам." }
+      ]
+    },
+    {
+      "id": "child",
+      "title": "Для ребёнка",
+      "phrases": [
+        { "en": "Do you have a simple tortilla, grilled fish, chicken or another mild dish for a child?", "ru": "Есть ли простая тортилья, рыба на гриле, курица или другое лёгкое блюдо для ребёнка?" },
+        { "en": "We have a six-year-old child. Could you recommend or adapt a simple dish for him?", "ru": "С нами ребёнок 6 лет. Посоветуйте или адаптируйте для него простое блюдо." }
+      ]
+    },
+    {
+      "id": "diet",
+      "title": "Лёгкая еда",
+      "phrases": [
+        { "en": "Could you recommend the lightest fish or seafood dishes that are not deep-fried?", "ru": "Порекомендуйте самые лёгкие блюда из рыбы или морепродуктов, не во фритюре." },
+        { "en": "We would like a local dry white wine, fresh and not too aromatic, preferably by the glass.", "ru": "Мы хотели бы местное сухое белое вино, свежее и не слишком ароматное, лучше по бокалам." }
+      ]
+    },
+    {
+      "id": "booking",
+      "title": "Бронирование и такси",
+      "phrases": [
+        { "en": "A regular table in the restaurant dining room for three adults and one six-year-old child.", "ru": "Обычный стол в зале ресторана: трое взрослых и ребёнок шести лет." },
+        { "en": "We need a taxi for four passengers with luggage and a six-year-old child. Do we need a booster seat?", "ru": "Нужно такси на четырёх пассажиров с багажом и ребёнком 6 лет. Нужен ли бустер?" },
+        { "en": "Which rice dish would you recommend for first-time visitors, and what is the minimum order?", "ru": "Какой рис вы посоветуете тем, кто впервые, и каков минимальный заказ?" }
+      ]
+    }
+  ]
+}
