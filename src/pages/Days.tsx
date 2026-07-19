@@ -1,7 +1,8 @@
 import { useState } from "react";
+import GuideBlock from "../components/GuideBlock";
 import PlaceCard from "../components/PlaceCard";
 import StatusChip from "../components/StatusChip";
-import { days, getPlace, getReservationFor } from "../lib/data";
+import { days, getGuide, getPlace, getReservationFor } from "../lib/data";
 import { STORE_KEYS, useStoredState } from "../lib/store";
 import { madridNow } from "../lib/time";
 
@@ -39,6 +40,7 @@ export default function Days() {
       <div className="card">
         {items.map((item) => {
           const place = getPlace(item.placeId);
+          const guide = item.placeId ? getGuide(item.placeId) : undefined;
           const reservation =
             item.reservation && item.placeId
               ? getReservationFor(item.placeId)
@@ -82,7 +84,13 @@ export default function Days() {
                 {place && (
                   <details>
                     <summary className="muted">о месте</summary>
-                    <PlaceCard place={place} />
+                    <PlaceCard place={place} hideGuide />
+                  </details>
+                )}
+                {guide && (
+                  <details>
+                    <summary className="muted">🎙️ гид</summary>
+                    <GuideBlock guide={guide} />
                   </details>
                 )}
               </div>

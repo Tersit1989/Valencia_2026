@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import FoodPanel from "../components/FoodPanel";
+import GuideBlock from "../components/GuideBlock";
 import PlaceCard from "../components/PlaceCard";
 import StatusChip from "../components/StatusChip";
-import { getPlace, getReservationFor, routeUrl, trip } from "../lib/data";
+import { getGuide, getPlace, getReservationFor, routeUrl, trip } from "../lib/data";
 import { STORE_KEYS, useStoredState } from "../lib/store";
 import {
   computeNowState,
@@ -65,7 +66,13 @@ function ItemCard({
       {place && (
         <details>
           <summary>Подробнее о месте</summary>
-          <PlaceCard place={place} />
+          <PlaceCard place={place} hideGuide />
+        </details>
+      )}
+      {place && getGuide(place.id) && (
+        <details>
+          <summary>🎙️ Гид</summary>
+          <GuideBlock guide={getGuide(place.id)!} />
         </details>
       )}
       {place && (

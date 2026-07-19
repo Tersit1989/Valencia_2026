@@ -70,6 +70,15 @@ export default function Settings() {
         </ul>
       </div>
 
+      <h2>Чаевые в Испании</h2>
+      <div className="card">
+        <ul className="tight">
+          {(trip.tipping as string[]).map((t) => (
+            <li key={t.slice(0, 30)}>{t}</li>
+          ))}
+        </ul>
+      </div>
+
       <h2>Правила поездки</h2>
       <div className="card">
         <ul className="tight">

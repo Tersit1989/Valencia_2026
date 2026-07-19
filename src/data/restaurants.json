@@ -8,16 +8,30 @@
       "time": "19:00",
       "partySize": 4,
       "role": "Первый полноценный испанский ужин, тапасы.",
-      "why": ["Тапас-формат: можно заказывать постепенно и делить.", "Рядом с вечерним прогулочным маршрутом среды."],
+      "why": [
+        "Тапас-формат: можно заказывать постепенно и делить.",
+        "Рядом с вечерним прогулочным маршрутом среды."
+      ],
       "orderPlan": [
         "Первая волна: валенсийские помидоры или свежий салат; tortilla; хлеб; холодная рыбная закуска.",
         "Вторая волна: осьминог или кальмар на гриле; рыба или гребешки; одно мясное блюдо; простая позиция ребёнку."
       ],
-      "avoid": ["Не брать одновременно много крокетов и других жареных тапас."],
+      "avoid": [
+        "Не брать одновременно много крокетов и других жареных тапас."
+      ],
       "phrases": [
-        { "for": "Для супруги", "text": "Could you recommend the lightest fish or seafood dishes that are not deep-fried?" },
-        { "for": "Для ребёнка", "text": "Do you have a simple tortilla, grilled fish, chicken or another mild dish for a child?" },
-        { "for": "Вино", "text": "Could you recommend a fresh local white wine by the glass that works with seafood and tapas?" }
+        {
+          "for": "Для супруги",
+          "text": "Could you recommend the lightest fish or seafood dishes that are not deep-fried?"
+        },
+        {
+          "for": "Для ребёнка",
+          "text": "Do you have a simple tortilla, grilled fish, chicken or another mild dish for a child?"
+        },
+        {
+          "for": "Вино",
+          "text": "Could you recommend a fresh local white wine by the glass that works with seafood and tapas?"
+        }
       ],
       "etiquette": [
         "Тапасы принято делить.",
@@ -31,7 +45,7 @@
     {
       "placeId": "navarro",
       "name": "Restaurante Navarro",
-      "status": "pending",
+      "status": "confirmed",
       "date": "2026-07-23",
       "time": "13:30",
       "partySize": 4,
@@ -50,14 +64,25 @@
         "4. Мясо или рис остальным.",
         "5. Один-два десерта на компанию."
       ],
-      "avoid": ["Не брать много закусок перед большим рисом."],
+      "avoid": [
+        "Не брать много закусок перед большим рисом."
+      ],
       "phrases": [
-        { "for": "Рис", "text": "Which rice dish would you recommend for first-time visitors, and what is the minimum order?" },
-        { "for": "Вино", "text": "We would like a local dry white wine, fresh and not too aromatic, preferably by the glass." },
-        { "for": "Для ребёнка", "text": "Could you make a simple fish, meat or potato dish without a heavy sauce for the child?" }
+        {
+          "for": "Рис",
+          "text": "Which rice dish would you recommend for first-time visitors, and what is the minimum order?"
+        },
+        {
+          "for": "Вино",
+          "text": "We would like a local dry white wine, fresh and not too aromatic, preferably by the glass."
+        },
+        {
+          "for": "Для ребёнка",
+          "text": "Could you make a simple fish, meat or potato dish without a heavy sauce for the child?"
+        }
       ],
       "etiquette": [],
-      "planB": "Если не подтвердится: не менять исторический маршрут; резервный ресторан в центре — полноценный зал, рейтинг 4,5+, обед 13:00–15:30, средиземноморская кухня."
+      "planB": null
     },
     {
       "placeId": "habitual",
@@ -76,44 +101,63 @@
         "Основное: hake; Iberian pork; squid rice (минимум на двоих).",
         "Десерт: torrija; сезонный фруктовый десерт."
       ],
-      "avoid": ["Не пить тяжёлое красное перед длинным Oceanogràfic.", "Цена и состав меню могут измениться — проверить (verify)."],
+      "avoid": [
+        "Не пить тяжёлое красное перед длинным Oceanogràfic.",
+        "Цена и состав меню могут измениться — проверить (verify)."
+      ],
       "phrases": [
-        { "for": "Для ребёнка", "text": "We have a six-year-old child. Could you recommend or adapt a simple dish for him?" },
-        { "for": "Вино", "text": "Could you recommend a Valencian wine that is versatile enough for fish, vegetables and rice?" }
+        {
+          "for": "Для ребёнка",
+          "text": "We have a six-year-old child. Could you recommend or adapt a simple dish for him?"
+        },
+        {
+          "for": "Вино",
+          "text": "Could you recommend a Valencian wine that is versatile enough for fish, vegetables and rice?"
+        }
       ],
       "etiquette": [],
       "planB": null
     },
     {
-      "placeId": "rausell",
-      "name": "Rausell",
+      "placeId": "goya-gallery",
+      "name": "Goya Gallery",
       "status": "candidate",
       "date": "2026-07-25",
       "time": "13:30",
       "partySize": 4,
-      "role": "Классическая продуктовая кухня после Bioparc.",
+      "role": "Классические валенсийские рисы после Bioparc. Michelin Bib Gourmand — знак «отличная еда по разумной цене».",
       "why": [
-        "Семейная история с 1948 года.",
-        "Кухня рынка: рыба и морепродукты из Denia.",
-        "Мясо на гриле, рис, нормальные порции.",
-        "Ресторанный зал, бар и takeaway."
+        "Бронь онлайн — OpenTable или goyagalleryrestaurant.com, без звонков.",
+        "Специализация — традиционные рисы и средиземноморская кухня.",
+        "Полноценный зал в Эшампле, ~10–15 минут на такси от Bioparc.",
+        "Паэлья готовится на заказ ~90 минут — заказывается при бронировании, поэтому подадут вовремя."
       ],
       "orderPlan": [
-        "Томаты или овощи.",
-        "Sepionets или кальмар.",
-        "Рыба.",
-        "Одно мясное блюдо.",
-        "Arroz meloso, если подходит по размеру.",
-        "Простая курица или рыба ребёнку."
+        "Паэлья/рис — заказать заранее при бронировании (минимум за 24 часа).",
+        "Салат или esgarraet на стол.",
+        "Рыба дня супруге.",
+        "Ребёнку — простая курица или рыба.",
+        "Десерт по ситуации: рис сытный."
       ],
-      "avoid": ["Рыбу по весу — сначала уточнить итоговую цену."],
+      "avoid": [
+        "Не набирать закусок перед рисом."
+      ],
       "phrases": [
-        { "for": "Бронирование", "text": "A regular table in the restaurant dining room for three adults and one six-year-old child." },
-        { "for": "Цена рыбы", "text": "What will the approximate total price be for this fish?" },
-        { "for": "Вино", "text": "Could you recommend a good-value local wine by the glass? We prefer something fresh rather than heavy." }
+        {
+          "for": "Бронирование (в комментарии)",
+          "text": "Table for three adults and one six-year-old child. We would like to pre-order a paella for lunch."
+        },
+        {
+          "for": "Вино",
+          "text": "Could you recommend a fresh local white wine by the glass?"
+        },
+        {
+          "for": "Для ребёнка",
+          "text": "Could you make a simple chicken, fish or potato dish for the child?"
+        }
       ],
       "etiquette": [],
-      "planB": "Если семья выбирает Альбуферу — убрать Bioparc и Rausell."
+      "planB": "Запасной вариант — Palace Fesol (классика с 1909 года, Hernán Cortés 7). Если семья выбирает Альбуферу — убрать и Bioparc, и ресторан."
     },
     {
       "placeId": "hotel-helen-berger",
@@ -136,7 +180,9 @@
         "салат, tortilla",
         "хлеб, вода и сок ребёнку"
       ],
-      "avoid": ["Не превращать перекус в полноценный обед — 1–2 позиции на семью."],
+      "avoid": [
+        "Не превращать перекус в полноценный обед — 1–2 позиции на семью."
+      ],
       "phrases": [],
       "etiquette": [],
       "planB": null
@@ -149,11 +195,22 @@
       "time": "08:15",
       "partySize": 4,
       "role": "Валенсийский esmorzaret внутри Mercado Central (не brunch café).",
-      "why": ["Настоящий местный завтрак прямо на маршруте четверга."],
-      "orderPlan": ["2 bocadillos на четверых (разделить)", "tortilla", "кофе", "апельсиновый сок"],
-      "avoid": ["Не брать четыре больших bocadillos — иначе обед будет слишком рано."],
+      "why": [
+        "Настоящий местный завтрак прямо на маршруте четверга."
+      ],
+      "orderPlan": [
+        "2 bocadillos на четверых (разделить)",
+        "tortilla",
+        "кофе",
+        "апельсиновый сок"
+      ],
+      "avoid": [
+        "Не брать четыре больших bocadillos — иначе обед будет слишком рано."
+      ],
       "phrases": [],
-      "etiquette": ["Формат — стойка; если пожилому человеку неудобно, перейти в обычный бар за столиком."],
+      "etiquette": [
+        "Формат — стойка; если пожилому человеку неудобно, перейти в обычный бар за столиком."
+      ],
       "planB": "Очередь более 15–20 минут → обычный традиционный бар: tostada con tomate y aceite, café con leche, zumo de naranja, tortilla."
     },
     {
@@ -164,9 +221,18 @@
       "time": null,
       "partySize": 4,
       "role": "Только сладкая остановка.",
-      "why": ["Классическое место для horchata в центре."],
-      "orderPlan": ["horchata", "fartons", "churros", "шоколад"],
-      "avoid": ["Не считать полноценным завтраком."],
+      "why": [
+        "Классическое место для horchata в центре."
+      ],
+      "orderPlan": [
+        "horchata",
+        "fartons",
+        "churros",
+        "шоколад"
+      ],
+      "avoid": [
+        "Не считать полноценным завтраком."
+      ],
       "phrases": [],
       "etiquette": [],
       "planB": null
@@ -179,9 +245,22 @@
       "time": null,
       "partySize": 4,
       "role": "Быстрый перекус без поездки.",
-      "why": ["Всегда рядом; выручает между приёмами пищи."],
-      "orderPlan": ["empanada", "bocadillo", "coca", "tortilla", "хлеб", "выпечка", "йогурт", "фрукты"],
-      "avoid": ["Не отправлять всю семью на отдельную прогулку ради перекуса."],
+      "why": [
+        "Всегда рядом; выручает между приёмами пищи."
+      ],
+      "orderPlan": [
+        "empanada",
+        "bocadillo",
+        "coca",
+        "tortilla",
+        "хлеб",
+        "выпечка",
+        "йогурт",
+        "фрукты"
+      ],
+      "avoid": [
+        "Не отправлять всю семью на отдельную прогулку ради перекуса."
+      ],
       "phrases": [],
       "etiquette": [],
       "planB": null

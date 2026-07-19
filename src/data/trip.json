@@ -1,5 +1,5 @@
 {
-  "version": "2026-07-18",
+  "version": "2026-07-19",
   "sourceDocument": "VALENCIA_GUIDE_SOURCE.md, версия 18 июля 2026",
   "trip": {
     "city": "Валенсия",
@@ -43,7 +43,7 @@
       "placeId": "navarro",
       "date": "2026-07-23",
       "time": "13:30",
-      "status": "pending",
+      "status": "confirmed",
       "partySize": 4,
       "role": "Традиционный валенсийский семейный обед."
     },
@@ -57,13 +57,13 @@
       "role": "Главный современный средиземноморский обед."
     },
     {
-      "place": "Rausell",
-      "placeId": "rausell",
+      "place": "Goya Gallery",
+      "placeId": "goya-gallery",
       "date": "2026-07-25",
       "time": "13:30",
       "status": "candidate",
       "partySize": 4,
-      "role": "Классическая продуктовая кухня после Bioparc."
+      "role": "Классические валенсийские рисы после Bioparc. Бронь онлайн (OpenTable/сайт); паэлью заказать при бронировании — минимум за 24 часа."
     }
   ],
   "excludedRestaurants": [
@@ -79,14 +79,38 @@
     "Casa Carmela"
   ],
   "foodGlossary": [
-    { "name": "Horchata", "note": "Напиток из chufa (земляного миндаля)." },
-    { "name": "Fartons", "note": "Выпечка к horchata." },
-    { "name": "Esgarraet", "note": "Перец, солёная треска и оливковое масло." },
-    { "name": "Clóchinas", "note": "Сезонные валенсийские мидии." },
-    { "name": "Titaina", "note": "Томаты, перец, тунец и кедровые орехи." },
-    { "name": "Paella Valenciana", "note": "Курица, кролик, фасоль, garrofó, иногда улитки." },
-    { "name": "Arroz del senyoret", "note": "Рис с уже очищенными морепродуктами." },
-    { "name": "Agua de Valencia", "note": "Апельсиновый коктейль — крепче, чем кажется." }
+    {
+      "name": "Horchata",
+      "note": "Напиток из chufa (земляного миндаля)."
+    },
+    {
+      "name": "Fartons",
+      "note": "Выпечка к horchata."
+    },
+    {
+      "name": "Esgarraet",
+      "note": "Перец, солёная треска и оливковое масло."
+    },
+    {
+      "name": "Clóchinas",
+      "note": "Сезонные валенсийские мидии."
+    },
+    {
+      "name": "Titaina",
+      "note": "Томаты, перец, тунец и кедровые орехи."
+    },
+    {
+      "name": "Paella Valenciana",
+      "note": "Курица, кролик, фасоль, garrofó, иногда улитки."
+    },
+    {
+      "name": "Arroz del senyoret",
+      "note": "Рис с уже очищенными морепродуктами."
+    },
+    {
+      "name": "Agua de Valencia",
+      "note": "Апельсиновый коктейль — крепче, чем кажется."
+    }
   ],
   "roomFood": [
     "вода",
@@ -108,9 +132,18 @@
   ],
   "emergency": {
     "numbers": [
-      { "label": "Единый номер экстренных служб (ЕС)", "value": "112" },
-      { "label": "Национальная полиция", "value": "091" },
-      { "label": "Местная полиция", "value": "092" }
+      {
+        "label": "Единый номер экстренных служб (ЕС)",
+        "value": "112"
+      },
+      {
+        "label": "Национальная полиция",
+        "value": "091"
+      },
+      {
+        "label": "Местная полиция",
+        "value": "092"
+      }
     ],
     "hospital": {
       "placeId": "hospital-clinico",
@@ -127,9 +160,8 @@
     }
   },
   "checklist": [
-    "Navarro — подтверждение брони 23 июля 13:30",
-    "Rausell — забронировать 25 июля 13:30 (обычный зал, 3 взрослых + ребёнок 6 лет)",
-    "Oceanogràfic — купить билеты и время входа на официальном сайте",
+    "Goya Gallery — забронировать онлайн на 25 июля 13:30 (OpenTable/goyagalleryrestaurant.com) и сразу заказать паэлью (нужно минимум за 24 часа)",
+    "Oceanogràfic — купить билеты и время входа; для 65+ взять reduced-билет, при входе показать паспорт с датой рождения",
     "Bioparc — окончательное решение по субботе",
     "Включён ли завтрак в Helen Berger",
     "Ночное такси 26 июля 03:30 и бустер для ребёнка",
@@ -138,15 +170,217 @@
     "Лекарства и аллергии"
   ],
   "sources": [
-    { "name": "Oceanogràfic — цены и часы", "url": "https://www.oceanografic.org/en/planifica-tu-visita-al-oceanografic-de-valencia/prices-and-schedules/" },
-    { "name": "Habitual", "url": "https://www.habitual.es/" },
-    { "name": "Restaurante Navarro", "url": "https://restaurantenavarro.com/en/" },
-    { "name": "Rausell", "url": "https://www.rausell.es/" },
-    { "name": "Helen Berger", "url": "https://hotelhelenberger.com/" },
-    { "name": "Mercado Central", "url": "https://www.visitvalencia.com/en/what-to-do-valencia/valencian-culture/monuments-in-valencia/central-market" },
-    { "name": "Lonja de la Seda", "url": "https://www.visitvalencia.com/en/what-to-do-valencia/valencian-culture/monuments-in-valencia/lonja-silk-exchange" },
-    { "name": "Catedral de València", "url": "https://www.visitvalencia.com/en/what-to-do-valencia/valencian-culture/monuments-in-valencia/catedral-valencia-cathedral" },
-    { "name": "Gulliver Park", "url": "https://www.visitvalencia.com/en/what-to-do-valencia/nature-in-valencia/parks-and-gardens-valencia/gulliver-park" },
-    { "name": "Bioparc", "url": "https://bioparcvalencia.es/" }
+    {
+      "name": "Oceanogràfic — цены и часы",
+      "url": "https://www.oceanografic.org/en/planifica-tu-visita-al-oceanografic-de-valencia/prices-and-schedules/"
+    },
+    {
+      "name": "Habitual",
+      "url": "https://www.habitual.es/"
+    },
+    {
+      "name": "Restaurante Navarro",
+      "url": "https://restaurantenavarro.com/en/"
+    },
+    {
+      "name": "Goya Gallery",
+      "url": "https://goyagalleryrestaurant.com/"
+    },
+    {
+      "name": "Helen Berger",
+      "url": "https://hotelhelenberger.com/"
+    },
+    {
+      "name": "Mercado Central",
+      "url": "https://www.visitvalencia.com/en/what-to-do-valencia/valencian-culture/monuments-in-valencia/central-market"
+    },
+    {
+      "name": "Lonja de la Seda",
+      "url": "https://www.visitvalencia.com/en/what-to-do-valencia/valencian-culture/monuments-in-valencia/lonja-silk-exchange"
+    },
+    {
+      "name": "Catedral de València",
+      "url": "https://www.visitvalencia.com/en/what-to-do-valencia/valencian-culture/monuments-in-valencia/catedral-valencia-cathedral"
+    },
+    {
+      "name": "Gulliver Park",
+      "url": "https://www.visitvalencia.com/en/what-to-do-valencia/nature-in-valencia/parks-and-gardens-valencia/gulliver-park"
+    },
+    {
+      "name": "Bioparc",
+      "url": "https://bioparcvalencia.es/"
+    }
+  ],
+  "tipping": [
+    "Чаевые в Испании необязательны: сервис уже включён в цену, никто не обидится, если их не оставить.",
+    "Ресторан с обслуживанием: за хороший обед принято округлить счёт или оставить 5–10% наличными. За обед на четверых 5–10 € — щедро.",
+    "Бар, кафе, стойка (esmorzaret, орчатерия): мелочь со сдачи или ничего.",
+    "Такси: просто округлить сумму (12,60 € → 13 €). За помощь с багажом можно +1 €.",
+    "Отель: 1–2 € за занос багажа; уборке — по желанию в конце проживания.",
+    "Чаевые лучше оставлять наличными на столе: строка «propina» в терминале встречается редко.",
+    "«Servicio incluido» в счёте означает, что доплачивать точно ничего не нужно."
+  ],
+  "spanishDishes": [
+    {
+      "group": "Рис (едят в обед!)",
+      "items": [
+        {
+          "name": "Paella Valenciana",
+          "desc": "канон: курица, кролик, зелёная фасоль, garrofó; без морепродуктов"
+        },
+        {
+          "name": "Paella de marisco",
+          "desc": "рис с морепродуктами в панцирях"
+        },
+        {
+          "name": "Arroz del senyoret",
+          "desc": "«рис сеньора»: морепродукты уже очищены — есть удобно"
+        },
+        {
+          "name": "Arroz negro",
+          "desc": "чёрный рис с чернилами каракатицы и айоли"
+        },
+        {
+          "name": "Arroz meloso",
+          "desc": "«влажный» рис, между паэльей и супом"
+        },
+        {
+          "name": "Arroz a banda",
+          "desc": "рис на рыбном бульоне, рыба отдельно"
+        },
+        {
+          "name": "Fideuà",
+          "desc": "«паэлья» из тонкой лапши с морепродуктами"
+        }
+      ]
+    },
+    {
+      "group": "Закуски и тапас",
+      "items": [
+        {
+          "name": "Tortilla española",
+          "desc": "толстый картофельный омлет; безопасный выбор для ребёнка"
+        },
+        {
+          "name": "Jamón serrano / ibérico",
+          "desc": "вяленый окорок; ibérico — из чёрной свиньи, дороже и ароматнее"
+        },
+        {
+          "name": "Croquetas",
+          "desc": "жареные крокеты с хамоном, курицей или грибами"
+        },
+        {
+          "name": "Patatas bravas",
+          "desc": "жареный картофель с острым соусом"
+        },
+        {
+          "name": "Ensaladilla rusa",
+          "desc": "«русский салат» — оливье с тунцом и майонезом"
+        },
+        {
+          "name": "Pan con tomate",
+          "desc": "хлеб с тёртым томатом и оливковым маслом"
+        },
+        {
+          "name": "Esgarraet",
+          "desc": "валенсийский: печёный перец + солёная треска + масло"
+        },
+        {
+          "name": "Titaina",
+          "desc": "валенсийский: томаты, перец, тунец, кедровые орехи"
+        },
+        {
+          "name": "Gazpacho",
+          "desc": "холодный томатный суп-смузи; спасение в жару"
+        },
+        {
+          "name": "Salmorejo",
+          "desc": "гуще гаспачо, с хамоном и яйцом сверху"
+        }
+      ]
+    },
+    {
+      "group": "Рыба и морепродукты",
+      "items": [
+        {
+          "name": "Clóchinas",
+          "desc": "мелкие валенсийские мидии, сезон как раз летом"
+        },
+        {
+          "name": "Gambas al ajillo",
+          "desc": "креветки в кипящем масле с чесноком"
+        },
+        {
+          "name": "Calamares a la romana",
+          "desc": "кольца кальмара в кляре"
+        },
+        {
+          "name": "Sepia a la plancha",
+          "desc": "каракатица на гриле — легко и не жирно"
+        },
+        {
+          "name": "Pulpo a la gallega",
+          "desc": "осьминог с паприкой и картофелем"
+        },
+        {
+          "name": "All i pebre",
+          "desc": "угорь из Альбуферы в чесночно-паприковом соусе, местная классика"
+        },
+        {
+          "name": "Dorada / lubina a la sal",
+          "desc": "дорада или сибас, запечённые в соли"
+        }
+      ]
+    },
+    {
+      "group": "Сладкое",
+      "items": [
+        {
+          "name": "Churros con chocolate",
+          "desc": "хворост, который макают в густой шоколад"
+        },
+        {
+          "name": "Horchata y fartons",
+          "desc": "ледяной напиток из чуфы + сладкие булочки"
+        },
+        {
+          "name": "Torrija",
+          "desc": "«испанские гренки» в молоке и корице"
+        },
+        {
+          "name": "Flan",
+          "desc": "карамельный пудинг; есть в любом меню"
+        },
+        {
+          "name": "Buñuelos de calabaza",
+          "desc": "тыквенные пончики, валенсийская ярмарочная классика"
+        }
+      ]
+    },
+    {
+      "group": "Напитки",
+      "items": [
+        {
+          "name": "Agua de Valencia",
+          "desc": "коктейль: кава + апельсиновый сок + джин; крепче, чем кажется"
+        },
+        {
+          "name": "Tinto de verano",
+          "desc": "«летнее красное» с газировкой — легче сангрии"
+        },
+        {
+          "name": "Sangría",
+          "desc": "вино с фруктами; в туристических местах часто из пакета — лучше tinto de verano"
+        },
+        {
+          "name": "Café solo / cortado / con leche",
+          "desc": "эспрессо / с каплей молока / с молоком"
+        },
+        {
+          "name": "Zumo de naranja natural",
+          "desc": "свежевыжатый апельсиновый сок — святое в Валенсии"
+        }
+      ]
+    }
   ]
 }

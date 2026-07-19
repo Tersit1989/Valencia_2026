@@ -1,56 +1,7 @@
-import { useState } from "react";
-import TtsButton from "../components/TtsButton";
+import GuideBlock from "../components/GuideBlock";
 import { days, getDayIntro, getGuide, getPlace } from "../lib/data";
 import { ttsSupported } from "../lib/tts";
 import type { PlaceGuide } from "../types";
-
-function QuestionCard({ guide }: { guide: PlaceGuide }) {
-  const [revealed, setRevealed] = useState(false);
-  if (!guide.question || !guide.answer) return null;
-  return (
-    <div className="quiz">
-      <p className="quiz-q">❓ {guide.question}</p>
-      {revealed ? (
-        <p className="quiz-a">💡 {guide.answer}</p>
-      ) : (
-        <button className="quiz-btn" onClick={() => setRevealed(true)}>
-          Показать ответ
-        </button>
-      )}
-    </div>
-  );
-}
-
-function GuideCard({
-  guide,
-  time,
-  placeName
-}: {
-  guide: PlaceGuide;
-  time?: string;
-  placeName?: string;
-}) {
-  const speechText = `${guide.title}. ${guide.paragraphs.join(" ")}`;
-  return (
-    <div className="card">
-      {(time || placeName) && (
-        <p className="muted" style={{ margin: 0 }}>
-          {[time, placeName].filter(Boolean).join(" · ")}
-        </p>
-      )}
-      <div className="guide-head">
-        <h3 style={{ marginTop: 4 }}>{guide.title}</h3>
-        <TtsButton text={speechText} />
-      </div>
-      {guide.paragraphs.map((p) => (
-        <p key={p.slice(0, 40)} className="guide-text">
-          {p}
-        </p>
-      ))}
-      <QuestionCard guide={guide} />
-    </div>
-  );
-}
 
 /** Все рассказы по дням: озвучка, загадки, вступление к каждому дню. */
 export default function Guide() {
@@ -84,17 +35,17 @@ export default function Guide() {
               {day.weekday}, {day.date.slice(8)}.07 — {day.title}
             </h2>
             {intro && (
-              <GuideCard
-                guide={{ placeId: day.id, ...intro }}
-              />
+              <div className="card">
+                <GuideBlock guide={{ placeId: day.id, ...intro }} />
+              </div>
             )}
             {dayGuides.map(({ guide, time }) => (
-              <GuideCard
-                key={guide.placeId}
-                guide={guide}
-                time={time}
-                placeName={getPlace(guide.placeId)?.name}
-              />
+              <div className="card" key={guide.placeId}>
+                <p className="muted" style={{ margin: "0 0 4px" }}>
+                  {time} · {getPlace(guide.placeId)?.name}
+                </p>
+                <GuideBlock guide={guide} />
+              </div>
             ))}
           </div>
         );

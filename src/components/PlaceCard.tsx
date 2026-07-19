@@ -7,13 +7,20 @@ import {
   routeUrl
 } from "../lib/data";
 import StatusChip from "./StatusChip";
-import TtsButton from "./TtsButton";
+import GuideBlock from "./GuideBlock";
 
 /** Full point card per the map spec: name, day/time, status, address, route,
  *  meaning, facts, order, avoid, child mission, plan B, official site. */
-export default function PlaceCard({ place }: { place: Place }) {
+export default function PlaceCard({
+  place,
+  hideGuide = false
+}: {
+  place: Place;
+  /** true — рассказ гида показывается отдельным раскрывающимся разделом. */
+  hideGuide?: boolean;
+}) {
   const prev = getPlace(place.previousPlaceId);
-  const guide = getGuide(place.id);
+  const guide = hideGuide ? undefined : getGuide(place.id);
   return (
     <div>
       <h3>{place.name}</h3>
@@ -45,15 +52,7 @@ export default function PlaceCard({ place }: { place: Place }) {
       {place.routeNotes && <p className="guide-text">{place.routeNotes}</p>}
       {guide && (
         <div className="guide-block">
-          <div className="guide-head">
-            <p className="guide-title">🎙️ {guide.title}</p>
-            <TtsButton text={`${guide.title}. ${guide.paragraphs.join(" ")}`} />
-          </div>
-          {guide.paragraphs.map((p) => (
-            <p key={p.slice(0, 40)} className="guide-text">
-              {p}
-            </p>
-          ))}
+          <GuideBlock guide={guide} />
         </div>
       )}
       {place.facts.length > 0 && (

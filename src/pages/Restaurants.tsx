@@ -1,6 +1,7 @@
 import PlaceCard from "../components/PlaceCard";
 import StatusChip from "../components/StatusChip";
 import { getPlace, restaurants, trip } from "../lib/data";
+import type { DishGroup } from "../types";
 
 export default function Restaurants() {
   return (
@@ -91,16 +92,19 @@ export default function Restaurants() {
         );
       })}
 
-      <h2>Что попробовать в Валенсии</h2>
-      <div className="card">
-        <ul className="tight">
-          {trip.foodGlossary.map((g) => (
-            <li key={g.name}>
-              <strong>{g.name}</strong> — {g.note}
-            </li>
-          ))}
-        </ul>
-      </div>
+      <h2>Основные испанские блюда</h2>
+      {(trip.spanishDishes as DishGroup[]).map((dg) => (
+        <div className="card" key={dg.group}>
+          <h3>{dg.group}</h3>
+          <ul className="tight">
+            {dg.items.map((d) => (
+              <li key={d.name}>
+                <strong>{d.name}</strong> — {d.desc}
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))}
 
       <h2>Не рассматриваем</h2>
       <div className="card">

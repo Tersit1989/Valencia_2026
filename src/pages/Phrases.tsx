@@ -17,15 +17,23 @@ export default function Phrases() {
   return (
     <div>
       <h1>Полезные фразы</h1>
-      <p className="muted">Нажмите на фразу, чтобы скопировать английский текст.</p>
+      <p className="muted">
+        Нажмите на фразу, чтобы скопировать её. Серым курсивом — как
+        произносить.
+      </p>
       {phraseGroups.map((g) => (
         <div key={g.id}>
           <h2>{g.title}</h2>
           {g.phrases.map((p) => (
-            <div className="phrase" key={p.en} onClick={() => copy(p.en)}>
+            <div className="phrase" key={p.text} onClick={() => copy(p.text)}>
               <div className="en">
-                {p.en} {copied === p.en && "✅"}
+                {p.text} {copied === p.text && "✅"}
               </div>
+              {p.hint && (
+                <div className="muted">
+                  <em>{p.hint}</em>
+                </div>
+              )}
               <div className="muted">{p.ru}</div>
             </div>
           ))}

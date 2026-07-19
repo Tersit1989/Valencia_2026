@@ -126,5 +126,10 @@ export interface Story {
 export interface PhraseGroup {
   id: string;
   title: string;
-  phrases: { en: string; ru: string }[];
+  phrases: { text: string; ru: string; hint?: string }[];
+}
+
+export interface DishGroup {
+  group: string;
+  items: { name: string; desc: string }[];
 }

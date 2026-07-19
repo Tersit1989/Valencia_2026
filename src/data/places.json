@@ -89,14 +89,14 @@
     {
       "id": "navarro",
       "name": "Restaurante Navarro",
-      "category": "pending-restaurant",
+      "category": "confirmed-restaurant",
       "address": "Carrer de l'Arquebisbe Mayoral 5, 46002 València (за зданием мэрии)",
       "coordinates": {
         "lat": 39.469,
         "lon": -0.3776
       },
       "officialUrl": "https://restaurantenavarro.com/en/",
-      "reservationStatus": "pending",
+      "reservationStatus": "confirmed",
       "date": "2026-07-23",
       "time": "13:30",
       "duration": "1,5 часа",
@@ -125,7 +125,7 @@
         "Семейный ресторан с 1951 года, продукты с Mercado Central и Ruzafa."
       ],
       "childMission": null,
-      "planB": "Если Navarro не подтвердится: не менять исторический маршрут; выбрать резервный ресторан в центре (полноценный зал, рейтинг 4,5+, обед 13:00–15:30, средиземноморская кухня).",
+      "planB": null,
       "verificationDate": "2026-07-18",
       "verificationStatus": "ok",
       "navQuery": "Restaurante Navarro, Carrer de l'Arquebisbe Mayoral 5, València"
@@ -171,46 +171,45 @@
       "navQuery": "Habitual Ricard Camarena, Mercado de Colón, València"
     },
     {
-      "id": "rausell",
-      "name": "Rausell",
+      "id": "goya-gallery",
+      "name": "Goya Gallery",
       "category": "candidate-restaurant",
-      "address": "Carrer d'Àngel Guimerà 61, 46008 València (район Extramurs)",
+      "address": "Carrer de Borriana 3, 46005 València (Eixample, у Gran Vía Marqués del Turia)",
       "coordinates": {
-        "lat": 39.4695,
-        "lon": -0.3895
+        "lat": 39.4652,
+        "lon": -0.3667
       },
-      "officialUrl": "https://www.rausell.es/",
+      "officialUrl": "https://goyagalleryrestaurant.com/",
       "reservationStatus": "candidate",
       "date": "2026-07-25",
       "time": "13:30",
       "duration": "1,5 часа",
       "transportMode": "taxi",
       "previousPlaceId": "bioparc",
-      "routeNotes": "Такси от Bioparc 12:15–12:40. При бронировании: «A regular table in the restaurant dining room for three adults and one six-year-old child.»",
+      "routeNotes": "Такси от Bioparc 12:15–12:35 (~10–15 минут). Бронь онлайн: OpenTable или goyagalleryrestaurant.com. Паэлья готовится ~90 минут — заказать её при бронировании, минимум за 24 часа.",
       "importance": "core",
       "indoorOutdoor": "indoor",
       "foodRecommendations": [
-        "томаты или овощи",
-        "sepionets или кальмар",
-        "рыба (уточнить цену по весу: «What will the approximate total price be for this fish?»)",
-        "одно мясное блюдо",
-        "arroz meloso, если подходит по размеру"
+        "Паэлья или другой рис — фирменное блюдо, заказать заранее при бронировании",
+        "Салат или esgarraet на стол",
+        "Рыба дня супруге",
+        "Десерт по ситуации — рис сытный"
       ],
       "wineRecommendations": [
-        "«Could you recommend a good-value local wine by the glass? We prefer something fresh rather than heavy.»"
+        "«Could you recommend a fresh local white wine by the glass?»"
       ],
       "childOptions": [
-        "Простая курица или рыба"
+        "Простая курица, рыба или картофель: «Could you make a simple dish for the child?»"
       ],
       "etiquette": [],
       "facts": [
-        "Семейная история с 1948 года: кухня рынка, рыба и морепродукты из Denia, мясо на гриле, рис. Ресторанный зал, бар и takeaway."
+        "Michelin Bib Gourmand — отметка «отличная еда по разумной цене». Специализация — традиционные валенсийские рисы."
       ],
       "childMission": null,
-      "planB": "Если семья выбирает Альбуферу — убрать Bioparc и Rausell, не пытаться совместить всё.",
-      "verificationDate": "2026-07-18",
-      "verificationStatus": "ok",
-      "navQuery": "Restaurante Rausell, Carrer d'Àngel Guimerà 61, València"
+      "planB": "Если Goya Gallery недоступен: запасной вариант — Palace Fesol (классика с 1909 года, Carrer d'Hernán Cortés 7). Если семья выбирает Альбуферу — убрать Bioparc и ресторан, не совмещать всё.",
+      "verificationDate": "2026-07-19",
+      "verificationStatus": "verify",
+      "navQuery": "Goya Gallery Restaurant, Carrer de Borriana 3, València"
     },
     {
       "id": "mercado-central",
@@ -649,7 +648,7 @@
       "duration": "4,5 часа с паузами",
       "transportMode": "taxi",
       "previousPlaceId": "habitual",
-      "routeNotes": "Билеты купить заранее на официальном сайте, выбрав дату и время входа. Ориентир 2026: взрослый ≈ €43, ребёнок 4–12 ≈ €32, пенсионный ≈ €32 при наличии подтверждения. Дельфинарий проверять в день посещения — не строить весь маршрут вокруг шоу.",
+      "routeNotes": "Билеты купить заранее на официальном сайте, выбрав дату и время входа. Ориентир 2026: взрослый ≈ €43, ребёнок 4–12 ≈ €32. Скидка 65+: reduced-билет покупается онлайн, на входе показывают документ с датой рождения — иностранный паспорт (в т.ч. российский загран) подходит. Пенсионерам младше 65 лет нужна справка о пенсии, загранпаспорта недостаточно. Дельфинарий проверять в день посещения — не строить весь маршрут вокруг шоу.",
       "importance": "core",
       "indoorOutdoor": "mixed",
       "foodRecommendations": [],
@@ -699,7 +698,7 @@
         "Рог носорога состоит из кератина."
       ],
       "childMission": "Найди суриката-часового и посчитай, сколько лемуров ты видишь.",
-      "planB": "Если Bioparc слишком жаркий: Museo Nacional de Cerámica, короткая прогулка, кондиционируемая пауза, Rausell, отель.",
+      "planB": "Если Bioparc слишком жаркий: Museo Nacional de Cerámica, короткая прогулка, кондиционируемая пауза, обед в Goya Gallery, отель.",
       "verificationDate": "2026-07-18",
       "verificationStatus": "ok",
       "navQuery": "Bioparc València"
@@ -839,6 +838,39 @@
       "planB": null,
       "verificationDate": "2026-07-18",
       "verificationStatus": "verify"
+    },
+    {
+      "id": "estacion-norte",
+      "name": "Estación del Norte и Plaza de Toros",
+      "category": "attraction",
+      "address": "Carrer de Xàtiva 24, València",
+      "coordinates": {
+        "lat": 39.4665,
+        "lon": -0.3771
+      },
+      "officialUrl": null,
+      "reservationStatus": null,
+      "date": "2026-07-24",
+      "time": "09:45",
+      "duration": "30 минут",
+      "transportMode": "walk",
+      "previousPlaceId": "hotel-helen-berger",
+      "routeNotes": "Вход в вестибюль вокзала свободный. Арена корриды — рядом, смотрим только снаружи.",
+      "importance": "optional",
+      "indoorOutdoor": "mixed",
+      "foodRecommendations": [],
+      "wineRecommendations": [],
+      "childOptions": [],
+      "etiquette": [],
+      "facts": [
+        "Вокзал 1917 года — шедевр модернизма: вестибюль украшен мозаиками с апельсинами и надписью «Счастливого пути» на разных языках.",
+        "Соседняя арена Plaza de Toros (1859) построена по образу римского Колизея."
+      ],
+      "childMission": "Найди в вестибюле вокзала мозаики с апельсинами и посчитай, на скольких языках написано «Счастливого пути».",
+      "planB": null,
+      "verificationDate": "2026-07-19",
+      "verificationStatus": "ok",
+      "navQuery": "Estación del Norte, València"
     }
   ]
 }
