@@ -1,5 +1,5 @@
 {
-  "note": "Адреса ресторанов и отеля проверены по официальным сайтам и справочникам (18.07.2026). Координаты пинов — ориентировочные (±50–100 м): точная навигация идёт по полю navQuery (текстовый адрес для Google Maps). Точки со статусом 'verify' требуют финальной проверки перед поездкой.",
+  "note": "Координаты выверены 19.07.2026: известные достопримечательности — по опубликованным данным (Wikidata/Mapcarta/официальные справочники), отель и Пл. Патриарха — по калибровке со скриншота OSM, рестораны и мелкие точки — с привязкой к проверенным соседним ориентирам (статус 'verify', точность ~±80 м). Навигация кнопкой «Открыть маршрут» идёт по текстовому адресу (navQuery) и от пинов не зависит.",
   "places": [
     {
       "id": "hotel-helen-berger",
@@ -7,8 +7,8 @@
       "category": "hotel",
       "address": "Carrer de les Comèdies 22–24, Valencia",
       "coordinates": {
-        "lat": 39.4734,
-        "lon": -0.3714
+        "lat": 39.4723,
+        "lon": -0.3726
       },
       "officialUrl": "https://hotelhelenberger.com/",
       "reservationStatus": null,
@@ -38,8 +38,8 @@
       "facts": [],
       "childMission": null,
       "planB": null,
-      "verificationDate": "2026-07-18",
-      "verificationStatus": "verify",
+      "verificationDate": "2026-07-19",
+      "verificationStatus": "ok",
       "navQuery": "Room Mate Helen Berger, Carrer de les Comèdies 22, València"
     },
     {
@@ -48,8 +48,8 @@
       "category": "confirmed-restaurant",
       "address": "Carrer dels Assaonadors 9, 46001 València (квартал El Mercat, рядом с Plaça del Mercat)",
       "coordinates": {
-        "lat": 39.4761,
-        "lon": -0.3779
+        "lat": 39.4756,
+        "lon": -0.3776
       },
       "officialUrl": "https://clannvalencia.com/",
       "reservationStatus": "confirmed",
@@ -82,8 +82,8 @@
       "facts": [],
       "childMission": null,
       "planB": "Если рейс задержан: убрать прогулку, предупредить Clann через WhatsApp, идти в ресторан прямо из отеля.",
-      "verificationDate": "2026-07-18",
-      "verificationStatus": "ok",
+      "verificationDate": "2026-07-19",
+      "verificationStatus": "verify",
       "navQuery": "Clann Bar, Carrer dels Assaonadors 9, València"
     },
     {
@@ -92,8 +92,8 @@
       "category": "confirmed-restaurant",
       "address": "Carrer de l'Arquebisbe Mayoral 5, 46002 València (за зданием мэрии)",
       "coordinates": {
-        "lat": 39.469,
-        "lon": -0.3776
+        "lat": 39.4694,
+        "lon": -0.3769
       },
       "officialUrl": "https://restaurantenavarro.com/en/",
       "reservationStatus": "confirmed",
@@ -126,8 +126,8 @@
       ],
       "childMission": null,
       "planB": null,
-      "verificationDate": "2026-07-18",
-      "verificationStatus": "ok",
+      "verificationDate": "2026-07-19",
+      "verificationStatus": "verify",
       "navQuery": "Restaurante Navarro, Carrer de l'Arquebisbe Mayoral 5, València"
     },
     {
@@ -136,8 +136,8 @@
       "category": "confirmed-restaurant",
       "address": "Mercado de Colón, нижний уровень; Carrer de Jorge Juan 19, 46004 València",
       "coordinates": {
-        "lat": 39.4675,
-        "lon": -0.3694
+        "lat": 39.4689,
+        "lon": -0.3684
       },
       "officialUrl": "https://www.habitual.es/",
       "reservationStatus": "confirmed",
@@ -166,7 +166,7 @@
       "facts": [],
       "childMission": null,
       "planB": null,
-      "verificationDate": "2026-07-18",
+      "verificationDate": "2026-07-19",
       "verificationStatus": "ok",
       "navQuery": "Habitual Ricard Camarena, Mercado de Colón, València"
     },
@@ -176,8 +176,8 @@
       "category": "candidate-restaurant",
       "address": "Carrer de Borriana 3, 46005 València (Eixample, у Gran Vía Marqués del Turia)",
       "coordinates": {
-        "lat": 39.4652,
-        "lon": -0.3667
+        "lat": 39.4653,
+        "lon": -0.3658
       },
       "officialUrl": "https://goyagalleryrestaurant.com/",
       "reservationStatus": "candidate",
@@ -217,8 +217,8 @@
       "category": "attraction",
       "address": "Plaça de la Ciutat de Bruges, Valencia",
       "coordinates": {
-        "lat": 39.4738,
-        "lon": -0.3788
+        "lat": 39.4733,
+        "lon": -0.3789
       },
       "officialUrl": "https://www.visitvalencia.com/en/what-to-do-valencia/valencian-culture/monuments-in-valencia/central-market",
       "reservationStatus": null,
@@ -243,7 +243,7 @@
       ],
       "childMission": "Найди самый необычный фрукт, самую большую рыбу и три вида оливок.",
       "planB": null,
-      "verificationDate": "2026-07-18",
+      "verificationDate": "2026-07-19",
       "verificationStatus": "ok",
       "navQuery": "Mercado Central, València"
     },
@@ -253,8 +253,8 @@
       "category": "fallback-food",
       "address": "Внутри Mercado Central, Valencia",
       "coordinates": {
-        "lat": 39.4739,
-        "lon": -0.3786
+        "lat": 39.4734,
+        "lon": -0.3787
       },
       "officialUrl": null,
       "reservationStatus": null,
@@ -280,7 +280,7 @@
       "facts": [],
       "childMission": null,
       "planB": "Если очередь более 15–20 минут или пожилому человеку неудобно у стойки — перейти в обычный традиционный бар: tostada con tomate y aceite, café con leche, zumo de naranja, tortilla.",
-      "verificationDate": "2026-07-18",
+      "verificationDate": "2026-07-19",
       "verificationStatus": "verify",
       "navQuery": "Central Bar Ricard Camarena, Mercado Central, València"
     },
@@ -290,8 +290,8 @@
       "category": "attraction",
       "address": "Carrer de la Llotja 2, Valencia",
       "coordinates": {
-        "lat": 39.4744,
-        "lon": -0.3786
+        "lat": 39.47443,
+        "lon": -0.37823
       },
       "officialUrl": "https://www.visitvalencia.com/en/what-to-do-valencia/valencian-culture/monuments-in-valencia/lonja-silk-exchange",
       "reservationStatus": null,
@@ -314,7 +314,7 @@
       ],
       "childMission": "Представь, что колонны — каменные деревья. Сколько стволов ты видишь?",
       "planB": null,
-      "verificationDate": "2026-07-18",
+      "verificationDate": "2026-07-19",
       "verificationStatus": "ok",
       "navQuery": "Lonja de la Seda, València"
     },
@@ -325,7 +325,7 @@
       "address": "Plaça Redonda, Valencia",
       "coordinates": {
         "lat": 39.4739,
-        "lon": -0.3774
+        "lon": -0.3772
       },
       "officialUrl": null,
       "reservationStatus": null,
@@ -346,7 +346,7 @@
       "facts": [],
       "childMission": null,
       "planB": null,
-      "verificationDate": "2026-07-18",
+      "verificationDate": "2026-07-19",
       "verificationStatus": "ok"
     },
     {
@@ -355,8 +355,8 @@
       "category": "optional-attraction",
       "address": "Апостольские ворота собора, Plaza de la Virgen, Valencia",
       "coordinates": {
-        "lat": 39.4761,
-        "lon": -0.3756
+        "lat": 39.4758,
+        "lon": -0.3752
       },
       "officialUrl": null,
       "reservationStatus": null,
@@ -381,7 +381,7 @@
       ],
       "childMission": null,
       "planB": null,
-      "verificationDate": "2026-07-18",
+      "verificationDate": "2026-07-19",
       "verificationStatus": "ok"
     },
     {
@@ -390,8 +390,8 @@
       "category": "attraction",
       "address": "Plaça de l'Almoina, Valencia",
       "coordinates": {
-        "lat": 39.4753,
-        "lon": -0.3751
+        "lat": 39.4756,
+        "lon": -0.375
       },
       "officialUrl": "https://www.visitvalencia.com/en/what-to-do-valencia/valencian-culture/monuments-in-valencia/catedral-valencia-cathedral",
       "reservationStatus": null,
@@ -412,7 +412,7 @@
       ],
       "childMission": null,
       "planB": null,
-      "verificationDate": "2026-07-18",
+      "verificationDate": "2026-07-19",
       "verificationStatus": "ok",
       "navQuery": "Catedral de València"
     },
@@ -422,8 +422,8 @@
       "category": "attraction",
       "address": "Plaça de la Reina, Valencia",
       "coordinates": {
-        "lat": 39.4747,
-        "lon": -0.3755
+        "lat": 39.4742,
+        "lon": -0.3753
       },
       "officialUrl": null,
       "reservationStatus": null,
@@ -444,7 +444,7 @@
       ],
       "childMission": "Найди три изображения летучей мыши — одного из символов Валенсии.",
       "planB": null,
-      "verificationDate": "2026-07-18",
+      "verificationDate": "2026-07-19",
       "verificationStatus": "ok"
     },
     {
@@ -453,8 +453,8 @@
       "category": "attraction",
       "address": "Plaça de la Mare de Déu, Valencia",
       "coordinates": {
-        "lat": 39.4763,
-        "lon": -0.3753
+        "lat": 39.4761,
+        "lon": -0.375
       },
       "officialUrl": null,
       "reservationStatus": null,
@@ -473,7 +473,7 @@
       "facts": [],
       "childMission": null,
       "planB": null,
-      "verificationDate": "2026-07-18",
+      "verificationDate": "2026-07-19",
       "verificationStatus": "ok"
     },
     {
@@ -482,8 +482,8 @@
       "category": "attraction",
       "address": "Carrer del Poeta Querol 2, Valencia",
       "coordinates": {
-        "lat": 39.4727,
-        "lon": -0.3746
+        "lat": 39.4725,
+        "lon": -0.3739
       },
       "officialUrl": null,
       "reservationStatus": null,
@@ -504,7 +504,7 @@
       ],
       "childMission": null,
       "planB": null,
-      "verificationDate": "2026-07-18",
+      "verificationDate": "2026-07-19",
       "verificationStatus": "ok"
     },
     {
@@ -513,8 +513,8 @@
       "category": "attraction",
       "address": "Plaça del Col·legi del Patriarca, Valencia",
       "coordinates": {
-        "lat": 39.4729,
-        "lon": -0.3735
+        "lat": 39.4724,
+        "lon": -0.3733
       },
       "officialUrl": null,
       "reservationStatus": null,
@@ -533,7 +533,7 @@
       "facts": [],
       "childMission": null,
       "planB": null,
-      "verificationDate": "2026-07-18",
+      "verificationDate": "2026-07-19",
       "verificationStatus": "ok"
     },
     {
@@ -542,8 +542,8 @@
       "category": "attraction",
       "address": "Carrer de Jorge Juan 19, Valencia",
       "coordinates": {
-        "lat": 39.4675,
-        "lon": -0.3694
+        "lat": 39.46895,
+        "lon": -0.36837
       },
       "officialUrl": null,
       "reservationStatus": null,
@@ -564,7 +564,7 @@
       ],
       "childMission": null,
       "planB": null,
-      "verificationDate": "2026-07-18",
+      "verificationDate": "2026-07-19",
       "verificationStatus": "ok",
       "navQuery": "Mercado de Colón, València"
     },
@@ -574,8 +574,8 @@
       "category": "attraction",
       "address": "Jardí del Túria, tramo X, Valencia",
       "coordinates": {
-        "lat": 39.4623,
-        "lon": -0.3564
+        "lat": 39.4633,
+        "lon": -0.3597
       },
       "officialUrl": "https://www.visitvalencia.com/en/what-to-do-valencia/nature-in-valencia/parks-and-gardens-valencia/gulliver-park",
       "reservationStatus": null,
@@ -596,7 +596,7 @@
       ],
       "childMission": "Заберись на Гулливера, как лилипут, и найди самую длинную горку.",
       "planB": null,
-      "verificationDate": "2026-07-18",
+      "verificationDate": "2026-07-19",
       "verificationStatus": "ok",
       "navQuery": "Parque Gulliver, València"
     },
@@ -606,8 +606,8 @@
       "category": "attraction",
       "address": "Jardí del Túria (участок у Gulliver Park), Valencia",
       "coordinates": {
-        "lat": 39.464,
-        "lon": -0.358
+        "lat": 39.4642,
+        "lon": -0.3612
       },
       "officialUrl": null,
       "reservationStatus": null,
@@ -629,8 +629,8 @@
       ],
       "childMission": "Найди признаки бывшей реки: мосты, изгибы и низкое положение парка.",
       "planB": null,
-      "verificationDate": "2026-07-18",
-      "verificationStatus": "ok"
+      "verificationDate": "2026-07-19",
+      "verificationStatus": "verify"
     },
     {
       "id": "oceanografic",
@@ -638,8 +638,8 @@
       "category": "attraction",
       "address": "Ciutat de les Arts i les Ciències, Carrer d'Eduardo Primo Yúfera 1B, Valencia",
       "coordinates": {
-        "lat": 39.453,
-        "lon": -0.3477
+        "lat": 39.4528,
+        "lon": -0.3481
       },
       "officialUrl": "https://www.oceanografic.org/en/planifica-tu-visita-al-oceanografic-de-valencia/prices-and-schedules/",
       "reservationStatus": null,
@@ -664,7 +664,7 @@
       ],
       "childMission": "Найди животное, которое маскируется; найди самую большую рыбу; выбери трёх любимых животных; запиши один неожиданный факт.",
       "planB": "При усталости оставить только четыре приоритетные зоны: акулы и туннели, Арктика, Антарктика, Средиземное море. Пауза каждые 60–90 минут, не читать каждую табличку.",
-      "verificationDate": "2026-07-18",
+      "verificationDate": "2026-07-19",
       "verificationStatus": "ok",
       "navQuery": "Oceanogràfic, València"
     },
@@ -699,8 +699,8 @@
       ],
       "childMission": "Найди суриката-часового и посчитай, сколько лемуров ты видишь.",
       "planB": "Если Bioparc слишком жаркий: Museo Nacional de Cerámica, короткая прогулка, кондиционируемая пауза, обед в Goya Gallery, отель.",
-      "verificationDate": "2026-07-18",
-      "verificationStatus": "ok",
+      "verificationDate": "2026-07-19",
+      "verificationStatus": "verify",
       "navQuery": "Bioparc València"
     },
     {
@@ -709,8 +709,8 @@
       "category": "fallback-food",
       "address": "Plaça de Santa Caterina 6, Valencia",
       "coordinates": {
-        "lat": 39.4742,
-        "lon": -0.3764
+        "lat": 39.4741,
+        "lon": -0.3761
       },
       "officialUrl": null,
       "reservationStatus": null,
@@ -736,7 +736,7 @@
       "facts": [],
       "childMission": null,
       "planB": null,
-      "verificationDate": "2026-07-18",
+      "verificationDate": "2026-07-19",
       "verificationStatus": "verify",
       "navQuery": "Horchatería Santa Catalina, Plaça de Santa Caterina 6, València"
     },
@@ -746,8 +746,8 @@
       "category": "fallback-food",
       "address": "Любая пекарня рядом с отелем",
       "coordinates": {
-        "lat": 39.4737,
-        "lon": -0.3711
+        "lat": 39.4725,
+        "lon": -0.3729
       },
       "officialUrl": null,
       "reservationStatus": null,
@@ -777,7 +777,7 @@
       "facts": [],
       "childMission": null,
       "planB": null,
-      "verificationDate": "2026-07-18",
+      "verificationDate": "2026-07-19",
       "verificationStatus": "verify"
     },
     {
@@ -806,7 +806,7 @@
       "facts": [],
       "childMission": null,
       "planB": null,
-      "verificationDate": "2026-07-18",
+      "verificationDate": "2026-07-19",
       "verificationStatus": "ok",
       "navQuery": "Valencia Airport (VLC)"
     },
@@ -845,8 +845,8 @@
       "category": "attraction",
       "address": "Carrer de Xàtiva 24, València",
       "coordinates": {
-        "lat": 39.4665,
-        "lon": -0.3771
+        "lat": 39.467,
+        "lon": -0.3776
       },
       "officialUrl": null,
       "reservationStatus": null,
