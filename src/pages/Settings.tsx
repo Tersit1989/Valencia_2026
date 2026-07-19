@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { days, trip } from "../lib/data";
+import { downloadTripIcs } from "../lib/ics";
 import { STORE_KEYS, useStoredState } from "../lib/store";
 
 export default function Settings() {
@@ -9,6 +10,10 @@ export default function Settings() {
     ""
   );
   const [tired, setTired] = useStoredState<boolean>(STORE_KEYS.tired, false);
+  const [voiceReminders, setVoiceReminders] = useStoredState<boolean>(
+    STORE_KEYS.voiceReminders,
+    false
+  );
   const [, setMissions] = useStoredState<string[]>(STORE_KEYS.missions, []);
 
   return (
@@ -22,6 +27,34 @@ export default function Settings() {
         <Link className="big-btn secondary" to="/emergency">
           🚨 Экстренное
         </Link>
+      </div>
+
+      <h2>Напоминания</h2>
+      <div className="card">
+        <p>
+          Самый надёжный способ получать напоминания «пора выходить» — добавить
+          расписание в календарь телефона: система напомнит за 15 минут до
+          каждого пункта, даже когда приложение закрыто.
+        </p>
+        <button className="big-btn" onClick={downloadTripIcs}>
+          📅 Скачать расписание для календаря (.ics)
+        </button>
+        <p className="muted">
+          iPhone: скачанный файл откроется в Safari → «Добавить все» в
+          Календарь. Android: открыть файл в Google Календаре.
+        </p>
+        <label className="field">
+          <input
+            type="checkbox"
+            checked={voiceReminders}
+            onChange={(e) => setVoiceReminders(e.target.checked)}
+          />{" "}
+          Голосовые напоминания в приложении
+        </label>
+        <p className="muted">
+          Пока приложение открыто, телефон голосом предупредит за 10 минут до
+          выхода и в момент выхода.
+        </p>
       </div>
 
       <h2>Настройки</h2>

@@ -12,6 +12,7 @@ import {
   formatMinutesLeft,
   madridNow
 } from "../lib/time";
+import { speak } from "../lib/tts";
 import type { ItineraryItem } from "../types";
 
 function ItemCard({
@@ -87,6 +88,10 @@ function ItemCard({
 export default function Today() {
   const [tired, setTired] = useStoredState<boolean>(STORE_KEYS.tired, false);
   const [simulateDate] = useStoredState<string>(STORE_KEYS.simulateDate, "");
+  const [voiceReminders] = useStoredState<boolean>(
+    STORE_KEYS.voiceReminders,
+    false
+  );
   const [showFood, setShowFood] = useState(false);
   const [, forceTick] = useState(0);
 
@@ -99,6 +104,32 @@ export default function Today() {
   const date = simulateDate || now.date;
   const state = computeNowState(date, now.minutes, tired);
   const day = state.day ?? findDayByDate(trip.trip.startDate);
+
+  // Голосовые напоминания (работают, пока приложение открыто):
+  // за 10 минут до следующего пункта и в момент его начала.
+  useEffect(() => {
+    if (!voiceReminders || simulateDate || !state.next) return;
+    const mins = state.minutesToNext;
+    if (mins === undefined) return;
+    const threshold = mins <= 0 ? "start" : mins <= 10 ? "soon" : null;
+    if (!threshold) return;
+    const key = `${date}-${state.next.id}-${threshold}`;
+    const fired: string[] = JSON.parse(
+      localStorage.getItem(STORE_KEYS.firedReminders) ?? "[]"
+    );
+    if (fired.includes(key)) return;
+    localStorage.setItem(
+      STORE_KEYS.firedReminders,
+      JSON.stringify([...fired.slice(-50), key])
+    );
+    navigator.vibrate?.([200, 100, 200]);
+    speak(
+      threshold === "start"
+        ? `Пора выходить: ${state.next.title}.`
+        : `Через ${mins} минут: ${state.next.title}.`,
+      () => {}
+    );
+  }, [voiceReminders, simulateDate, state.next, state.minutesToNext, date]);
 
   return (
     <div>

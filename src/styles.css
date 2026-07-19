@@ -269,9 +269,72 @@ ul.tight li {
   z-index: 1;
 }
 
+.map-topbar {
+  position: fixed;
+  top: 8px;
+  left: 8px;
+  right: 8px;
+  z-index: 600;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 6px 8px;
+  overflow-x: auto;
+}
+
+.marker-num {
+  border-radius: 50%;
+  border: 2px solid #fff;
+  color: #fff;
+  font-weight: 700;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+}
+
+.marker-num.active {
+  border-color: #ffd43b;
+  font-size: 14px;
+}
+
+.geo-btn {
+  position: fixed;
+  left: 10px;
+  top: 62px;
+  z-index: 600;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 1px solid var(--line);
+  background: var(--card);
+  font-size: 1.3rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+
+.geo-btn.on {
+  background: #1971c2;
+  border-color: #1971c2;
+}
+
+.route-panel {
+  position: fixed;
+  left: 8px;
+  right: 8px;
+  bottom: calc(var(--nav-h) + env(safe-area-inset-bottom) + 8px);
+  z-index: 600;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 12px 14px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+}
+
 .map-legend {
   position: absolute;
-  top: 8px;
+  top: 60px;
   right: 8px;
   z-index: 500;
   background: var(--card);

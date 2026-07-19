@@ -37,5 +37,7 @@ export const STORE_KEYS = {
   theme: "v26.theme",
   tired: "v26.tired",
   missions: "v26.missions",
-  simulateDate: "v26.simulateDate"
+  simulateDate: "v26.simulateDate",
+  voiceReminders: "v26.voiceReminders",
+  firedReminders: "v26.firedReminders"
 };
