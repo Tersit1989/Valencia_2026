@@ -8,7 +8,7 @@
       "address": "Carrer de les Comèdies 22–24, Valencia",
       "coordinates": {
         "lat": 39.4734,
-        "lon": -0.3727
+        "lon": -0.3714
       },
       "officialUrl": "https://hotelhelenberger.com/",
       "reservationStatus": null,
@@ -746,8 +746,8 @@
       "category": "fallback-food",
       "address": "Любая пекарня рядом с отелем",
       "coordinates": {
-        "lat": 39.4738,
-        "lon": -0.3726
+        "lat": 39.4737,
+        "lon": -0.3711
       },
       "officialUrl": null,
       "reservationStatus": null,
